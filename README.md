@@ -11,3 +11,5 @@
 🎯[5.ToDo ](https://ghanendrabhardwaj19.github.io/My-Projects/ToDo/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/ToDo)
 
 🎯[6.Digital Watch](https://ghanendrabhardwaj19.github.io/My-Projects/watch/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/watch/index.html)
+
+🎯[7.SoloMusic](https://ghanendrabhardwaj19.github.io/My-Projects/SoloMusic/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/SoloMusic/index.html)
