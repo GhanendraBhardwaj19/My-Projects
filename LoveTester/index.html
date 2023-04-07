@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Tester!</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .heading{
+            padding: 4px;
+            margin: 10px;
+            background-color: #09584B;
+            border-radius: 20px;
+        }
+        #main-heading{
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        .container{
+            width: 98%;
+            height: 84vh;
+            background-color: #09584B;
+            margin: auto;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #card{
+            background: white;
+            padding: 60px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: -5px -5px 10px rgba(255, 255, 255,0.3),5px 5px 10px rgba(3, 3, 3, 0.8);
+        }
+        #first,#second{
+            color:#054d41;
+            padding: 4px 0px;
+            font-weight: bold;
+            /* margin:px; */
+        }
+        #firstName,#secondName{
+            border: 1px solid #09584B;
+            outline: 0;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            color: #09584B;
+            background: #bff4eb;
+        }
+        #gender1,#gender2,#gender3,#gender4{
+            accent-color:#09584B ;
+        }
+        #male,#female{
+            color: #011713;
+        }
+        #check{
+            padding: 10px 30px;
+            color: #09584B;
+            background-color: white;
+            border: 2px solid #09584B;
+            outline: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all .8s;
+        }
+        #check:hover{
+            background: #09584B;
+            color: white;
+            transition: ease-in-out;
+        }
+        #res{
+            font-size: 24px;
+            /* text-align: center; */
+            padding: 0px 20px;
+            border: none;
+            outline: none;
+            color: #09584B;
+        }
+        #reset{
+            padding: 12px 30px;
+            color: #fff;
+            background-color: #09584B;
+            border: 1px solid #fff;
+            outline: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all .8s;
+        }
+        .borderRadius{
+            background: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h2 id="main-heading">Check Your Love Percentage Here!</h2>
+    </div>
+    <div class="container">
+        <div id="card">
+            <form>
+               <h3 id="first">Your Name: </h3>
+                <input type="text" id="firstName" required>
+
+                <input type="radio" id="gender1" name="firstContact" value="male" required/>
+                <label for="gender1" id="male">male</label>
+
+               <input type="radio" id="gender2" name="firstContact" value="female" required />
+               <label for="gender2" id="female">female</label> <br><br>
+
+
+                <h3 id="second">Your Partner's Name: </h3>
+                <input type="text" id="secondName" required>
+                <input type="radio" id="gender3" name="secondContact" value="male"required />
+                <label for="gender3" id="male">male</label>
+
+               <input type="radio" id="gender4" name="secondContact" value="female" required />
+               <label for="gender4" id="female">female</label> <br> <br>
+
+               <a href="#"><button type="button" id="check">Check</button></a>
+               <a href="#"><button type="button" id="reset">Reset</button></a>
+               <input type="text" id="res">
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+
+
+        let check = document.getElementById('check');
+        let res = document.getElementById('res');
+        let reset = document.getElementById('reset');
+
+        reset.addEventListener('click',function(){
+            firstName.value="";
+            secondName.value="";
+            res.value="";
+        });
+        check.addEventListener('click',function(){
+           let card = document.getElementById('card');
+           let randomN = Math.floor(Math.random()*100+1);
+            let firstName = document.getElementById('firstName');
+            let secondName = document.getElementById('secondName');
+           if(firstName.value.length!="" && secondName.value.length!=""){
+              res.value=randomN+"%";
+                 }
+          else{
+             res.value="please fill required details!"
+             } 
+        
+           
+        });
+
+        
+    </script>
+</body>
+</html>
+
+
+<!-- let randomN = Math.floor(Math.random()*100+1);
+let firstName = document.getElementById('firstName');
+let secondName = document.getElementById('secondName');
+if(firstName.value.length!="" && secondName.value.length!=""){
+    res.value=randomN+"%";
+}
+else{
+    res.value="please fill required details!"
+} -->
