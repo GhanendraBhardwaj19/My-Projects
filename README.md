@@ -9,3 +9,5 @@
 🎯[4.Beautiful Slider](https://ghanendrabhardwaj19.github.io/My-Projects/Slider/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/Slider)
 
 🎯[5.ToDo ](https://ghanendrabhardwaj19.github.io/My-Projects/ToDo/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/ToDo)
+
+🎯[6.Digital Watch](https://ghanendrabhardwaj19.github.io/My-Projects/watch/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/watch/index.html)
