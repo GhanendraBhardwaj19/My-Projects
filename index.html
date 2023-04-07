@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Number</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .heading {
+        padding: 4px;
+        margin: 10px;
+        background-color: #fe3739;
+        border-radius: 20px;
+      }
+      #main-heading {
+        padding: 20px;
+        color: #092958;
+        text-align: center;
+      }
+      .container {
+        width: 98%;
+        height: 84vh;
+        background-color: #fe3739;
+        margin: auto;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #card {
+        background: #fec600;
+        padding: 60px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.3),
+          5px 5px 10px rgba(3, 3, 3, 0.8);
+      }
+      #first {
+        color: #092958;
+        padding: 4px 0px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        /* margin:px; */
+      }
+      #firstName {
+        border: 1px solid #092958;
+        outline: 0;
+        height: 50px;
+        width: 400px;
+        padding: 10px;
+        font-size: 24px;
+        border-radius: 4px;
+        color: #092958;
+        background: #819dd4;
+      }
+      #guess {
+        padding: 12px 30px;
+        color: #fff;
+        background-color: #092958;
+        border: 1px solid #fff;
+        outline: none;
+        font-size: 20px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.8s;
+        margin: 10px 0px;
+      }
+      #reset {
+        padding: 10px 30px;
+        color: #092958;
+        background-color: white;
+        border: 1px solid #092958;
+        outline: none;
+        font-size: 20px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.8s;
+        margin: 10px 0px;
+      }
+      #reset:hover {
+        color: white;
+        border: 2px solid #092958;
+        background-color: #092958;
+        transition: ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+      <h2 id="main-heading" style="text-transform: uppercase">
+        Guess Any Number in Minimum Attempts
+      </h2>
+    </div>
+    <div class="container">
+      <div id="card">
+        <form>
+          <h1 id="first">Start your guessing journey...</h1>
+          <input type="text" id="firstName" required /> <br />
+          <a href="#"><button type="button" id="guess">Guess</button></a>
+          <a href="#"><button type="button" id="reset">Reset</button></a>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      let guess = document.getElementById("guess");
+      let randomN = Math.floor(Math.random() * 100 + 1);
+      let main_heading = document.getElementById("main-heading");
+      let count = 0;
+      guess.addEventListener("click", guessNumber);
+      function guessNumber() {
+        count++;
+        let firstName = document.getElementById("firstName");
+        let userInput = parseInt(firstName.value);
+        let first = document.getElementById("first");
+        if (firstName.value != "") {
+          if (userInput == randomN) {
+            first.innerHTML = "you guessed it in " + count + " attempts";
+            firstName.value = "";
+          } else if (userInput < randomN) {
+            first.innerHTML = "too small!";
+            firstName.value = "";
+          } else {
+            first.innerHTML = "too high!";
+            firstName.value = "";
+          }
+        }
+      }
+
+      let reset = document.getElementById("reset");
+      reset.addEventListener("click", function () {
+        count = 0;
+        randomN = Math.floor(Math.random() * 100 + 1);
+        let firstName = document.getElementById("firstName");
+        let first = document.getElementById("first");
+        first.innerHTML = "Start your  guessing journey...";
+        firstName.value = "";
+      });
+    </script>
+  </body>
+</html>
