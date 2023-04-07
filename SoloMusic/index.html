@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Music </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            /* opacity: 0.7; */
+            background-repeat: no-repeat;
+        }
+       header{
+        height: 70px;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+       }
+       li{
+        display: inline-block;
+        margin: 0px 10px;
+        padding: 0px 10px;
+       }
+       a,li{
+        text-decoration: none;
+        list-style: none;
+        font-size: 18px;
+        color: white;
+       }
+       header .button  button{
+        background-color: rgb(244, 63, 8);
+        height: 35px;
+        width: 100px;
+        cursor: pointer;
+        border-radius: 50px;
+        color: white;
+       }
+       header .button button:hover{
+        background-color: rgb(244, 111, 70);
+       }
+       header nav .nav_links li a{
+        position: relative;
+       }
+       header nav .nav_links li a:hover{
+        color: rgb(244, 63, 8);
+       }
+       header nav .nav_links li a::after{
+        content: '';
+        display: block;
+        background-color:rgb(244, 63, 8) ;
+        width:0% ;
+        height: 2px;
+        position: absolute;
+        transition: all .25s ease-in-out;
+        
+       }
+       header nav .nav_links li a:hover:after{
+        width: 100%;
+       }
+       header .logo{
+        cursor: pointer;
+       }
+       /* body{
+        background-image: url('m.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+       } */
+       .container{
+        height: 70vh;
+        /* opacity: 0.7; */
+        width: 100%;
+        background-image: url('m.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+           }
+       h3{
+        color: white;
+        font-family: 'Exo 2', sans-serif;
+        margin-bottom: 4px;
+        font-size: 40px;
+        
+       }
+       pre{
+        color: white;
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        
+       }
+
+       .container img{
+        height: 35px;
+        width: 200px;
+        margin-bottom: 20px;
+       }
+       .container .go button{
+        background-color: white;
+        height: 35px;
+        width: 100px;
+        cursor: pointer;
+        border-radius: 50px;
+        border: none;
+        color:rgb(244, 63, 8) ;
+        font-family: 'Lato', sans-serif;
+        transition: all .5s ease-out;
+        margin-top: 10px;
+       }
+       .container .go button:hover{
+        transform: scale(1.10);
+        background-color: rgb(244, 63, 8);
+        color: white;
+       }
+       h1{
+        text-align: center;
+        font-family: 'Roboto Slab', serif;
+        margin: 40px 0px;
+        background-color: rgb(244, 63, 8);
+        padding: 40px;
+       }
+       .singers{
+        height: 620px;
+        width: 100%;
+        margin: 10px 4px;
+        /* background-color: rgb(0, 10, 10); */
+        background-image: url('mu.png');
+        
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+       }
+       .singers .subsing{
+        height: 220px;
+        width: 200px;
+        margin: 40px 6px;
+        border-radius: 30px;
+        background-color: rgb(255, 136, 0);
+       }
+       /* singer1 */
+       .singers .div1{
+        background-image: url('lata.jpeg');
+        background-size: cover;
+        position: relative;
+        cursor: pointer;
+       }
+       .singers .div1::after{
+        width: 200px;
+        height: 4px;
+        content: 'Lata Mangeshkar';
+        color: rgb(255, 136, 0);
+        font-weight: bold;
+        font-size: 14px;
+        position: absolute;
+        bottom: -10px;
+        visibility: hidden;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        /* transition: all .5s ease-out; */
+       }
+       .singers .div1:hover{
+        transform: scale(1.10);
+       }
+       .singers .div1:hover::after{
+        visibility: visible;
+       }
+
+       /* singer2 */
+       .singers .div2{
+        background-image: url('kishore.png');
+        background-size: cover;
+        position: relative;
+        cursor: pointer;
+       }
+       .singers .div2::after{
+        width: 200px;
+        height: 4px;
+        content: 'Kishore Kumar';
+        color: rgb(255, 136, 0);
+        font-size: 14px;
+        position: absolute;
+        font-weight: bold;
+        bottom: -10px;
+        visibility: hidden;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        /* transition: all .5s ease-out; */
+       }
+       .singers .div2:hover{
+        transform: scale(1.10);
+       }
+       .singers .div2:hover::after{
+        visibility: visible;
+       }
+
+       /* singer3 */
+
+       .singers .div3{
+        background-image: url('md.png');
+        background-size: cover;
+        position: relative;
+        cursor: pointer;
+       }
+       .singers .div3::after{
+        width: 200px;
+        height: 4px;
+        content: 'Md. Rafi';
+        color: rgb(255, 136, 0);
+        font-weight: bold;
+        font-size: 14px;
+        position: absolute;
+        bottom: -10px;
+        visibility: hidden;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        /* transition: all .5s ease-out; */
+       }
+       .singers .div3:hover{
+        transform: scale(1.10);
+       }
+       .singers .div3:hover::after{
+        visibility: visible;
+       }
+
+       /* singer4 */
+
+       .singers .div4{
+        background-image: url('udit.jpg');
+        background-size: cover;
+        position: relative;
+        cursor: pointer;
+        background-repeat: no-repeat;
+       }
+       .singers .div4::after{
+        width: 200px;
+        height: 4px;
+        content: 'Udit Narayan';
+        color: rgb(255, 136, 0);
+        font-size: 14px;
+        position: absolute;
+        font-weight: bold;
+        bottom: -10px;
+        visibility: hidden;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        /* transition: all .5s ease-out; */
+       }
+       .singers .div4:hover{
+        transform: scale(1.10);
+       }
+       .singers .div4:hover::after{
+        visibility: visible;
+       }
+
+       /* singer5 */
+
+       .singers .div5{
+        background-image: url('kumar.png');
+        background-size: cover;
+        position: relative;
+        cursor: pointer;
+        background-repeat: no-repeat;
+       }
+       .singers .div5::after{
+        width: 200px;
+        height: 4px;
+        content: 'Kumar Sanu';
+        color: rgb(255, 136, 0);
+        font-size: 14px;
+        position: absolute;
+        bottom: -10px;
+        visibility: hidden;
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        /* transition: all .5s ease-out; */
+       }
+       .singers .div5:hover{
+        transform: scale(1.10);
+       }
+       .singers .div5:hover::after{
+        visibility: visible;
+       }
+
+       /* singer5 */
+
+       .singers .div6{
+        background-image: url('alka.png');
+        background-size: cover;
+        position: relative;
+        cursor: pointer;
+        background-repeat: no-repeat;
+       }
+       .singers .div6::after{
+        width: 200px;
+        height: 4px;
+        content: 'Alka Yagnik';
+        color: rgb(255, 136, 0);
+        font-size: 14px;
+        position: absolute;
+        font-weight: bold;
+        bottom: -10px;
+        visibility: hidden;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        /* transition: all .5s ease-out; */
+       }
+       .singers .div6:hover{
+        transform: scale(1.10);
+       }
+       .singers .div6:hover::after{
+        visibility: visible;
+       }
+
+       /* singer7 */
+
+       .singers .div7{
+        background-image: url('abhijit.png');
+        background-size: cover;
+        position: relative;
+        cursor: pointer;
+        background-repeat: no-repeat;
+       }
+       .singers .div7::after{
+        width: 200px;
+        height: 4px;
+        font-weight: bold;
+        content: 'Abhijit Bhattacharya';
+        color: rgb(255, 136, 0);
+        font-size: 14px;
+        position: absolute;
+        bottom: -10px;
+        visibility: hidden;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        /* transition: all .5s ease-out; */
+       }
+       .singers .div7:hover{
+        transform: scale(1.10);
+       }
+       .singers .div7:hover::after{
+        visibility: visible;
+       }
+
+       /* singer8 */
+
+       .singers .div8{
+        background-image: url('sonu.png');
+        background-size: cover;
+        position: relative;
+        cursor: pointer;
+        background-repeat: no-repeat;
+       }
+       .singers .div8::after{
+        width: 200px;
+        height: 4px;
+        content: 'Sonu Nigam';
+        font-weight: bold;
+        color: rgb(255, 136, 0);
+        font-size: 14px;
+        position: absolute;
+        bottom: -10px;
+        visibility: hidden;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        /* transition: all .5s ease-out; */
+       }
+       .singers .div8:hover{
+        transform: scale(1.10);
+       }
+       .singers .div8:hover::after{
+        visibility: visible;
+       }
+
+       /* singer9 */
+
+       .singers .div9{
+        background-image: url('arijit.png');
+        background-size: cover;
+        position: relative;
+        cursor: pointer;
+        background-repeat: no-repeat;
+       }
+       .singers .div9::after{
+        width: 200px;
+        height: 4px;
+        content: 'Arijit Singh';
+        color: rgb(255, 136, 0);
+        font-size: 14px;
+        font-weight: bold;
+        position: absolute;
+        bottom: -10px;
+        visibility: hidden;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        /* transition: all .5s ease-out; */
+       }
+       .singers .div9:hover{
+        transform: scale(1.10);
+       }
+       .singers .div9:hover::after{
+        visibility: visible;
+       }
+
+       /* singer10 */
+
+       .singers .div10{
+        background-image: url('darshan.png');
+        background-size: cover;
+        position: relative;
+        cursor: pointer;
+        background-repeat: no-repeat;
+       }
+       .singers .div10::after{
+        width: 200px;
+        height: 4px;
+        font-weight: bold;
+        content: 'Darshan Raval';
+        color: rgb(255, 136, 0);
+        font-size: 14px;
+        position: absolute;
+        bottom: -10px;
+        visibility: hidden;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        /* transition: all .5s ease-out; */
+       }
+       .singers .div10:hover{
+        transform: scale(1.10);
+       }
+       .singers .div10:hover::after{
+        visibility: visible;
+       }
+
+       .videos{
+        height: 600px;
+        width: 100%;
+       padding: 45px 5px;
+        background-color:rgb(244, 153, 50);
+;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+       }
+       .videos .subvid{
+        height: 200px;
+        width: 300px;
+        margin: 10px 6px;
+        border-radius: 30px;
+        background-color: rgb(255, 136, 0);
+       }
+       .foot{
+        height: 40px;
+        width: 100%;
+       padding: 45px 5px;
+       margin: 10px;
+        background-color:rgb(23, 22, 21);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: white;
+       }
+       .foot li{
+        cursor: pointer;
+        transition: all .5s ease-out;
+       }
+       .foot li:hover{
+        color: rgb(244, 153, 50);
+        transform: scale(1.10);
+       }
+       .videos .subvid{
+        transition: all .25s ease-in;
+       }
+       .videos .vid1:hover{
+        transform: scale(1.10);
+       }
+       .videos .vid2:hover{
+        transform: scale(1.10);
+       }
+       .videos .vid3:hover{
+        transform: scale(1.10);
+       }
+       .videos .vid4:hover{
+        transform: scale(1.10);
+       }
+       .videos .vid5:hover{
+        transform: scale(1.10);
+       }
+       .videos .vid6:hover{
+        transform: scale(1.10);
+       }
+       .videos .vid7:hover{
+        transform: scale(1.10);
+       }
+       .videos .vid8:hover{
+        transform: scale(1.10);
+       }
+
+
+
+
+
+        
+    </style>
+</head>
+<body>
+    <header>
+       <img src="logoo.png" class="logo" alt="logo">
+       <nav>
+        <ul class="nav_links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#live">Live Show</a></li>
+        </ul>
+       </nav>
+       <a href="#button" class="button" ><button>Register</button></a>
+    </header>
+    <div class="container">
+        <img src="logoo.png" alt="logs">
+        <h3>Welcome to MusicSolo Driven</h3>
+        <pre>
+        "Change your ideas into the reality by 
+              participating in MusicSolo"
+        </pre>
+
+        <a href="#go" class="go"><button>Join</button></a>
+    </div>
+    <h1>Top 10 Singers</h1>
+    <div class="singers">
+        <div class="subsing div1">
+            
+        </div>
+        <div class="subsing div2"></div>
+        <div class="subsing div3"></div>
+        <div class="subsing div4"></div>
+        <div class="subsing div5"></div>
+        <div class="subsing div6"></div>
+        <div class="subsing div7"></div>
+        <div class="subsing div8"></div>
+        <div class="subsing div9"></div>
+        <div class="subsing div10"></div>
+       </div>
+
+       <h1>Top 8 Videos by Best Singers</h1>
+       <div class="videos">
+        <div class="subvid vid1">
+            <iframe height="200" width="300" src="https://www.youtube.com/embed/SBfPs-PMGTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="subvid vid2">
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/WAxsu_6lnkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="subvid vid3">
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/X888mhVFePA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="subvid vid4">
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/Wh-bV7i0B78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="subvid vid5">
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/2z3nNYH1ba8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="subvid vid6">
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/Mv3SZDP7QUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="subvid vid7">
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/fIip0BH6z7I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="subvid vid8">
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/dTu5dTEzVM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+       </div>
+
+      
+        <div class="foot">
+            <ul>
+                <li>Instagram</li>
+                <li>Twitter</li>
+                <li>Linkedin</li>
+                <li>YouTube</li>
+                <li>Facebook</li>
+            </ul>
+        </div>
+      
+
+</body>
+</html>
