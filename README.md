@@ -36,4 +36,4 @@
 
 🎯[17.Card Tutorial](https://ghanendrabhardwaj19.github.io/My-Projects/Cards/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/Cards/index.html)
 
-🎯[18.Card Tutorial](https://ghanendrabhardwaj19.github.io/My-Projects/BootstrapProject/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/BootstrapProject)
+🎯[18.Bootstrap Project](https://ghanendrabhardwaj19.github.io/My-Projects/BootstrapProject/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/BootstrapProject)
