@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto&display=swap"   rel="stylesheet">
+    <title>CCTV Website Clone</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --primary-blue-color:#52b1e0;
+    --text-color:#404555;
+    --dark-purple-color:#241052;
+    --pink-color:#C7137B;
+    --dark-blue-color:#6592E6;
+    --primary-purple-color:#36187D;
+    --para-color:#6C758F;
+    --shadow-color:#DBE3ED;
+    --white:#fff;
+    --background-color:#F2F3F7;
+}
+body{
+    background: var(--background-color);
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+h4{
+    font-size: 1.2rem;
+}
+/* .nav-section .header-container{
+    background-color: var(--background-color);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 1005;
+} */
+/* header{
+    background-color: var(--background-color);
+    position: sticky;
+    left: 0;
+    top: 0;
+} */
+.container{
+    max-width: 1184px;
+    padding-inline: 20px;
+    margin-inline: auto;
+    /* overflow-x: hidden; */
+    /* border: 1px solid rebeccapurple; */
+}
+.header-container{
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.header-container .navbar ul{
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.header-container .navbar ul li{
+    list-style: none;
+    margin: 25px;
+}
+.header-container .navbar ul li a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+
+}
+.header-container .logos .icon{
+    padding:  25px;
+    font-size: 23px;
+    margin: 8px;
+    color: var(--primary-blue-color);
+    background-color:var(--background-color) ;
+    box-shadow: -1px -2px 3px 0px #fff,3px 3px 3px 0px rgba(88,88,88,0.425);
+    border-radius: 50%;
+    line-height: 50%;
+}
+.header-container .logos .fb{
+    padding:  25px 30px;
+    font-size: 22px;
+    margin: 8px;
+    color: var(--primary-blue-color);
+    background-color:var(--background-color) ;
+    box-shadow: -1px -2px 3px 0px #fff,3px 3px 3px 0px rgba(88,88,88,0.425);
+    border-radius: 50%;
+    line-height: 40%;
+}
+.header-container .logos a:hover{
+    background-color: var(--white);
+    transition: .2s ease-in-out;
+}
+.header-container h1{
+    color: var(--primary-blue-color);
+}
+.flex{
+    display: flex;
+}
+.image{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(103, 178, 224, 0.7),rgba(45, 72, 224, 0.2)),url('./cctvassets/cctv.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-position: center; */
+}
+.content{
+    padding: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+.icon-container{
+    padding: 10% 2%;
+}
+.icons .fas{
+    padding: 65px;
+    margin: 8px;
+    font-size: 50px;
+    color: var(--dark-blue-color);
+    background-color:var(--background-color) ;
+    box-shadow:-2px -2px 13px 5px #fff, 4px 4px 18px -2px rgb(88 88 88 / 43%);
+    border-radius: 50%;
+    transition: all .2s ease-out;
+    /* line-height: 40%; */
+}
+.icons .fas:hover{
+    background-color: white;
+}
+.icons p{
+    font-size: 20px;
+    margin: 10px;
+}
+.icons,.icon-div{
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn{
+    height: 55px;
+    width: 160px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    text-align: center;
+    margin: 8px;
+}
+.read{
+    color: var(--white);
+    background-color: #36187D;
+}
+.get{
+    color: gray;
+    background: white;
+}
+button{
+    cursor: pointer;
+}
+.image .read:hover{
+    background-color: #241052;
+}
+.image .get:hover{
+    background-color: var(--background-color);
+}
+.content h1,.content p{
+    color: white;
+}
+.box-section{
+    padding-top: 10px;
+    padding-bottom: 40px;
+
+}
+.container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.box-container button{
+    padding: 18px 55px;
+    font-size: 18px;
+    color: white;
+    border-radius: 30px;
+    border: 3px solid rgb(149, 147, 147);
+    background: var(--pink-color);
+    text-transform: uppercase;
+
+}
+
+/* .container  h4{
+    text-transform: uppercase;
+    font-size: 1rem;
+} */
+/* .container .box{
+    height: 64px;
+    width: 44%;
+    border-radius: 30px;
+    padding: 10px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--pink-color);
+    border: 4px solid gray;
+} */
+.box a{
+    text-decoration: none;
+    color: white;
+}
+.services-section{
+    padding: 40px;
+}
+.services-section h1{
+    color: #241052;
+    transform: translateX(3%);
+}
+.services-section .card-container{
+    padding:40px;
+}
+
+.services-section .container{
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center; 
+    gap: 20px;
+}
+.services-section .container .cards{
+    padding: 60px 10px;
+    /* height: 50%; */
+    height: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow:-2px -2px 13px 5px #fff, 4px 4px 18px -2px rgb(88 88 88 / 43%);
+    border-radius: 30px;
+    flex-basis: 47%;
+    
+}
+.services-section .container .cards h3,.services-section .container .cards a{
+    color: #52b1e0;
+}
+.services-section .container .cards h4{
+    color: #C7137B;
+}
+
+.big-img-section{
+    margin-inline: auto;
+    padding: 40px;
+}
+.img-container{
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.img-box{
+    width: 100%;
+    height: 400px;
+    flex-basis: 45%;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    /* padding: 20px; */
+    background-color:var(--background-color) ;
+    box-shadow:-2px -2px 13px 5px #fff, 4px 4px 18px -2px rgb(88 88 88 / 43%);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    overflow: hidden;
+    
+    
+}
+.imgbox{
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.imgbox:hover{
+    transform: scale(1.02);
+}
+.first-imgbox{
+    width: 100%;
+    height: 80%;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-image: url('./cctvassets/homes.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.product-section{
+    margin: 16% 0px;
+}
+.product-box{
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    text-align: start;
+    /* border: 1px solid teal; */
+    /* box-shadow: -1px -2px 3px 0px #fff,3px 3px 3px 0px rgba(88,88,88,0.425); */
+}
+.pro-box{
+    box-shadow:-2px -2px 13px 5px #fff, 4px 4px 18px -2px rgb(88 88 88 / 43%);
+    flex-direction: column;
+    padding: 40px 30px;
+    border-radius: 40px;
+    margin: 18px;
+}
+.price{
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+.contents{
+    padding: 0px 20px;
+    margin-bottom: 30px;
+}
+.subscribe-section{
+    margin-block: 100px;
+}
+.sub-box{
+    box-shadow:-2px -2px 13px 5px #fff, 4px 4px 18px -2px rgb(88 88 88 / 43%);
+    flex-direction: row;
+    padding: 60px 20px;
+    border-radius: 40px;
+    align-items: center;
+    text-align: start;
+    justify-content: space-around;
+    margin: 10px 0px;
+}
+.sub-text{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    justify-content: start;
+    /* align-items: center; */
+}
+
+.sub-box button{
+    padding: 20px 44px;
+    font-size: 18px;
+    color: white;
+    border-radius: 30px;
+    background:var(--primary-blue-color);
+    text-transform: capitalize;
+    border: none;
+    transition: all .2s ease-in;
+
+}
+.sub-box button:hover{
+    background: #6592E6;
+}
+.imgs{
+    width: auto;
+}
+.imgs img{
+    width: 58%;
+    height:30vh;
+    border-radius: 50%;
+    border: none;
+    background-size: cover;
+    margin-bottom: 30px;
+    /* line-height: 50%; */
+
+}
+.team-container{
+    justify-content:space-between;
+    align-items: center;
+    /* gap: 20px; */
+    /* border: 1px solid red; */
+}
+.team-box{
+    flex-wrap: wrap;
+    flex-basis: 32%;
+    /* border: 1px solid red; */
+    width: 30%;
+    padding: 60px 25px;
+    gap: 20px;
+    border-radius: 30px;
+    box-shadow:-5px -5px 13px 5px #fff, 4px 4px 18px -2px rgb(88 88 88 / 43%);
+
+}
+.team-section .container h1{
+    padding: 30px;
+    margin-bottom: 10px;
+    color: #36187D;
+}
+.follow-container{
+justify-content: space-between;
+align-items: center;
+flex-direction: row;
+}
+.follow-box{
+    flex-basis: 40%;
+}
+.follow-text{
+    /* text-align: start; */
+    justify-content: start;
+    text-align: left;
+    /* align-items: center; */
+    flex-direction: column;
+    padding: 20px;
+}
+.follow-icon{
+    justify-content: end;
+    align-items: center;
+    padding-inline: 30px;
+}
+.follow-icon a{
+    padding:  20px;
+    font-size: 30px;
+    margin: 6px;
+    color: #6592E6;
+    background-color:var(--background-color) ;
+    box-shadow:-3px -3px 13px 5px #fff, 4px 4px 18px 3px rgb(88 88 88 / 43%);
+    border-radius: 50%;
+    line-height: 50%;
+    transition: all .2s ease-in-out;
+}
+.follow-icon a:hover{
+    background-color: white;
+}
+.big-card-section .container{
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.card-icon a{
+    padding:  18px;
+    font-size: 20px;
+    margin: 6px;
+    color: #6592E6;
+    background-color:var(--background-color) ;
+    box-shadow:-3px -3px 13px 5px #fff, 4px 4px 18px 3px rgb(88 88 88 / 43%);
+    border-radius: 50%;
+    line-height: 50%;
+    transition: all .2s ease-in-out;
+    /* flex-basis: 10%; */
+}
+.card-box{
+    /* flex-basis: 40%; */
+    /* border: 1px solid red; */
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+.card-text{
+    text-align: start;
+    /* align-items: center;    */
+    /* box-shadow:-3px -3px 13px 5px #fff, 4px 4px 18px 3px rgb(88 88 88 / 43%); */
+}
+.card-icon{
+    gap: 28px;
+    /* box-shadow:-3px -3px 13px 5px #fff, 4px 4px 18px 3px rgb(88 88 88 / 43%); */
+}
+.first-card,.second-card{
+    flex-basis: 45%;
+    box-shadow:-3px -3px 13px 5px #fff, 4px 4px 18px 3px rgb(88 88 88 / 43%);
+    border-radius: 50px;
+    padding: 26px 20px;
+}
+.big-card-section{
+    padding: 10px;
+    margin: 60px 10px;
+}
+.big-card-section .container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+.big-card h2{
+    margin-bottom: 10px;
+    color: #36187D;
+}
+.big-card p{
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: start;
+    line-height: 1.5rem;
+    color: var(--text-color);
+    /* width: 100%; */
+}
+footer .container{
+    /* flex-direction: row-reverse; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 20px;
+}
+.footer-section{
+    margin-top: 100px;
+}
+.foot ul{
+flex-direction: row;
+display: flex;
+}
+.foot li{
+    list-style: none;
+    padding: 10px;
+}
+.foot li a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+}
+.right a{
+    /* padding:  18px; */
+    font-size: 22px;
+    margin: 8px;
+    color: #6C758F;
+    background-color:var(--background-color) ;
+    /* box-shadow:-3px -3px 13px 5px #fff, 4px 4px 18px 3px rgb(88 88 88 / 43%); */
+    border-radius: 50%;
+    line-height: 50%;
+    transition: all .2s ease-in-out;
+}
+.sub-footer{
+    padding: 20px ;
+    margin-bottom: 30px;
+}
+.sub-footer p{
+    font-size: 18px;
+    color: #64676e;
+    margin-left: 20px;
+}
+    </style>
+</head>
+
+
+<body>
+    <section class="nav-section">
+        <header>
+            <div class="container flex header-container">
+                <h1>SECUREM4</h1>
+                <nav class="navbar">
+                    <ul class="flex">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">+1 (234) 567 89 01</a></li>
+                    </ul>
+                </nav>
+                <div class="logos flex">
+                    <a href="#" class="fb for-hover "><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"  class="twitter icon for-hover"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="insta icon for-hover"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </header>
+    </section> 
+
+    <section>
+        <div class="image flex">
+           <div class="content">
+            <h1>CCTV Cameras</h1>
+            <p style="font-size: 18px; line-height: 2rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita veritatis iure amet, excepturi laborum libero iusto laboriosam minima dolor error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt corporis id quos vel beatae. Tenetur ut eveniet aperiam magni odit.</p>
+            <div class="buttons">
+                <a href=""><button class="read btn">Read More</button></a>
+                <a href=""><button class="get btn">Get Started</button></a>
+            </div>
+           </div>
+        </div>
+    </section>
+
+    <section class="icon-section">
+        <div class="container icon-container">
+            <div class="icon-div flex">
+                <div class="first-icon flex icons">
+                    <i class="fa-solid fa-fax fas"></i>
+                    <p>Home Security</p>
+
+                </div>
+                <div class="second-icon flex icons">
+                    <i class="fa-solid fa-envelope fas"></i>
+                    <p>Office Security</p>
+                </div>
+                <div class="third-icon flex icons ">
+                    <i class="fa-solid fa-trowel-bricks fas"></i>
+                    <p>All Cameras</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="box-section">
+        <div class="container flex box-container">
+           <button>New Security is available.start now!</button>
+        </div>
+    </section>
+
+
+    <!-- <section class="about-section">
+        <div class="cont flex">
+            <div class="about-part">
+                <h1>About CCTV</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sit sunt minus voluptatum facilis ipsa, at dolore cupiditate, necessitatibus excepturi aspernatur expedita dolores consectetur.</p>
+            </div>
+            <div class="security-part">
+                <a href="#" class="fb icon for-hover"><i class="fa-brands fa-facebook-f"></i></a>
+                <div class="home-security flex">
+                    <div class="card">
+                        <h1>Home Security</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit labore officiis itaque culpa voluptatum doloremque ut voluptatem nisi qui dolore?</p>
+                    </div>
+                </div>
+                <div class="office-security flex">
+                    <a href="#" class="fb icon for-hover"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="cctv-cameras flex">
+                    <a href="#" class="fb icon for-hover"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section class="services-section">
+        <div class="container">
+            <h1 style="text-align: start;">Our Services</h1>
+        </div>
+        <div class="container flex card-container">
+            <div class="home-s cards flex">
+                <h3>01</h3>
+                <h4>Home Security</h4>
+                <a href="#" style="font-size: 1.5rem;"><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+
+            <div class="office-s cards flex">
+                <h3>02</h3>
+                <h4>Office Security</h4>
+                <a href="#" style="font-size: 1.5rem;"><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+
+            <div class="cyber-s cards flex">
+                <h3>03</h3>
+                <h4>Cyber Security</h4>
+                <a href="#" style="font-size: 1.5rem;"><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+
+            <div class="cctv-cam cards flex">
+                <h3>04</h3>
+                <h4>CCTV Cameras</h4>
+                <a href="#" style="font-size: 1.5rem;"><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <section class="big-img-section">
+        <div class=" img-container flex">
+            <div class="first-img-box img-box">
+                <div class="first-imgbox imgbox">
+                    
+                </div>
+                <h3 style="color: #36187D;">Home Security</h3>
+            </div>
+            <div class="second-img-box img-box">
+                <div class="first-imgbox imgbox">
+                    
+                </div>
+                <h3 style="color: #36187D;">Office Security</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-section">
+        <div class="container">
+            <h1 style="color:var(--dark-purple-color);">Product List</h1>
+           <div class="container">
+            <div class="product-box flex">
+                <div class="first flex pro-box">
+                    <div class="price flex">
+                        <h3 style="color:var(--primary-purple-color);">Home Security</h3>
+                        <h3 style="color:var(--primary-purple-color);">$139</h3>
+                    </div>
+                    <div class="contents" style="font-size: 18px; color: var(--text-color);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus, lacus at fringilla lacinia, leo leo eleifend tortor, quis sollicitudin mauris ipsum a elit. Duis eget tincidunt dui, non auctor mauris. Fusce ultrices mattis mattis. Aliquam sapien risus, dignissim quis magna non, congue molestie sapien. Quisque quis eros in sapien aliquam convallis sit amet quis ipsum. Donec eu enim pretium, vulputate mi eget, condimentum augue. Suspendisse potenti.
+                    </div>
+                </div>
+                <div class="second flex pro-box">
+                    <div class="price flex">
+                        <h3 style="color:var(--primary-purple-color);">Office Security</h3>
+                        <h3 style="color:var(--primary-purple-color);">$299</h3>
+                    </div>
+                    <div class="contents" style="font-size: 18px; color: var(--text-color);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus, lacus at fringilla lacinia, leo leo eleifend tortor, quis sollicitudin mauris ipsum a elit. Duis eget tincidunt dui, non auctor mauris. Fusce ultrices mattis mattis. Aliquam sapien risus, dignissim quis magna non, congue molestie sapien. Quisque quis eros in sapien aliquam convallis sit amet quis ipsum. Donec eu enim pretium, vulputate mi eget, condimentum augue. Suspendisse potenti.
+                    </div>
+                </div>
+                <div class="third flex pro-box">
+                    <div class="price flex">
+                        <h3 style="color:var(--primary-purple-color);">CCTV Cameras</h3>
+                        <h3 style="color:var(--primary-purple-color);">$339</h3>
+                    </div>
+                    <div class="contents" style="font-size: 18px; color: var(--text-color);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus, lacus at fringilla lacinia, leo leo eleifend tortor, quis sollicitudin mauris ipsum a elit. Duis eget tincidunt dui, non auctor mauris. Fusce ultrices mattis mattis. Aliquam sapien risus, dignissim quis magna non, congue molestie sapien. Quisque quis eros in sapien aliquam convallis sit amet quis ipsum. Donec eu enim pretium, vulputate mi eget, condimentum augue. Suspendisse potenti.
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+    </section>
+    <!-- Next code will be start from here! -->
+    <section class="team-section">
+        <div class="container">
+            <h1 style="text-align: start;">Our Team</h1>
+        </div>
+        <div class="container team-container flex"  style="flex-direction: row;">
+            <div class="team-box first-box flex" style="flex-direction: column;">
+                <div class="imgs">
+                    <img src="./cctvassets/james.jpg" alt="">
+                </div>
+                <h3 style="color: #36187D;">James Ford</h3>
+                <p style="font-size: 18px; color: var(--text-color);">General Director</p>
+            </div>
+
+            <div class="team-box first-box flex" style="flex-direction: column;">
+                <div class="imgs">
+                    <img src="./cctvassets/ann.jpg" alt="">
+                </div>
+                <h3 style="color: #36187D;">Ann Brown</h3>
+                <p style="font-size: 18px; color: var(--text-color);">Manager</p>
+            </div>
+
+            <div class="team-box first-box flex" style="flex-direction: column;">
+                <div class="imgs">
+                    <img src="./cctvassets/ben.jpg" alt="">
+                </div>
+                <h3 style="color: #36187D;">Ben Jason</h3>
+                <p style="font-size: 18px; color: var(--text-color);">Developer</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe-section">
+       <div class="container">
+        <div class=" flex sub-box">
+            <div class="sub-text">
+                <h1 style="color:var(--primary-purple-color);">Subscribe to the news!</h1>
+                <h4 style="color:var(--primary-purple-color);">Stay on top of our most  actual news!</h4>
+            </div>
+            <a href="#"><button>Subscribe Now!</button></a>
+       </div>
+       </div>
+    </section>
+
+    <section class="follow-section">
+        <div class="container flex follow-container">
+            <div class="follow-text flex follow-box">
+                <h1 style="color: #36187D; margin-bottom: 20px;">Follow Us</h1>
+                <p style="color: var(--text-color);font-size: 18px;line-height: 1.3rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu laoreet odio. Aenean eget lorem pellentesque, imperdiet ex convallis, iaculis justo.</p>
+            </div>
+            <div class="follow-icon flex follow-box">
+                    <a href="#"  class="twitter icon for-hover"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="insta icon for-hover"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="insta icon for-hover"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="big-card-section">
+        <div class="container flex">
+            <div class="first-card flex big-card">
+                <div class="card-text flex card-box" style="flex-direction: column;">
+                    <h2>Company Office</h2>
+                    <p class="first-para" style="margin-bottom: 30px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                     Phasellus cursus tortor, quis sollicitudin mauris ipsum a elit.</p>
+                    <p>South Carolina 3531 Camden Place 54</p>
+                    <p style="margin-bottom: 20px; font-size: 24px; color: #52b1e0;">+1 (234) 567 89 01</p>
+                </div>
+                <div class="card-icon flex card-box" style="flex-direction: column;">
+                    <a href="#"  class="twitter icon for-hover"><i class="fa-solid fa-globe"></i></a>
+                    <a href="#"><i class="fa-solid fa-location-dot icon "></i></a>
+                    <a href="#" class="insta icon for-hover"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+            <div class="second-card flex big-card">
+                <div class="card-text flex card-box" style="flex-direction: column;">
+                    <h2>Company Office</h2>
+                    <p class="first-para" style="margin-bottom: 30px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus tortor, quis sollicitudin mauris ipsum a elit.</p>
+                    <p>South Carolina 3531 Camden Place 54</p>
+                    <p style="margin-bottom: 20px; font-size: 24px; color: #52b1e0;">+1 (234) 567 89 01</p>
+                </div>
+                <div class="card-icon flex card-box" style="flex-direction: column;">
+                    <a href="#"  class="twitter icon for-hover"><i class="fa-solid fa-globe"></i></a>
+                    <a href="#"><i class="fa-solid fa-location-dot icon "></i></a>
+                    <a href="#" class="insta icon for-hover"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <footer class="footer-section">
+            <div class="container">
+                <div class="foot flex">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <hr>
+    <section class="sub-footer">
+        <div class="container flex"style="justify-content:space-between;">
+            <div class="left">
+            <p>© Copyright 2025 Mobirise - All Rights Reserved</p>
+            </div>
+            <div class="right flex">
+                <a href="#"  class="twitter icon for-hover"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="insta icon for-hover"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="insta icon for-hover"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" class="insta icon for-hover"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="insta icon for-hover"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="#" class="insta icon for-hover"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/f7c5396a66.js" crossorigin="anonymous"></script>
+</body>
+</html>

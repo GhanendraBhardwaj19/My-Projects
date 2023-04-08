@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Tutorial</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 90%;
+            height: 90%;
+            /* background-color: aquamarine; */
+            padding: 40px;
+            justify-content: center;
+            align-items: start;
+            gap: 40px;
+            margin: 20px 50px;
+            border-radius: 20px;
+            /* border: 1px solid gray; */
+            box-shadow: 0px 0px 12px -2px #888888;;
+        }
+        .flex{
+            display: flex;
+        }
+        .container img{
+            width: 300px;
+            border-radius: 20px;
+        }
+        .content{
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: start;
+            align-items: start;
+            gap: 12px;
+        }
+        .btn{
+            padding: 12px 20px;
+            background-color: orange;
+            color: white;
+            border-radius: 14px;
+            border: none;
+            outline: none;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(210, 139, 6);
+        }
+       
+        
+
+    </style>
+</head>
+<body>
+    <div class="container flex">
+        <div class="images">
+            <img src="un.jpg" alt="Udit Narayan Jha">
+        </div>
+        <div class="content flex">
+            <h2>Udit Narayan</h2>
+            <h4>Indian Playback Singer</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum a quod incidunt, quaerat at non modi ducimus molestias illo expedita nulla. Natus ducimus magnam fugiat aperiam at aspernatur officia corporis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum a quod incidunt, quaerat at non modi ducimus molestias illo expedita nulla. Natus ducimus magnam fugiat aperiam at aspernatur officia corporis.</p>
+           <a href="#"> <button class="btn">Download CV</button></a>
+        </div>
+    </div>
+</body>
+</html>
