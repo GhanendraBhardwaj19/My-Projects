@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f7c5396a66.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Ubuntu:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Spotify Clone</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      #cross {
+        width: 100%;
+        padding: 10px;
+        background: #1d75de;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      #cross i {
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+      }
+      .header {
+        width: 100%;
+        padding: 20px 50px;
+        background: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .header nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .header h2 {
+        color: white;
+        font-size: 22px;
+      }
+      .header i {
+        color: white;
+        font-size: 34px;
+        margin-right: 6px;
+        margin-top: 4px;
+      }
+      .header li {
+        text-decoration: none;
+      }
+      .header a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+      }
+      .bold {
+        font-weight: 700;
+        transition: all 0.5s;
+      }
+      .bold:hover {
+        color: #1db954;
+      }
+      .container {
+        width: 100%;
+        height: 82vh;
+        background-color: #1d75de;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+      .btn {
+        padding: 14px 40px;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 30px;
+        outline: none;
+        cursor: pointer;
+      }
+      .btn.first {
+        background: black;
+        border: none;
+      }
+      .btn.second {
+        border: 2px solid white;
+        background: transparent;
+      }
+      .container .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+      }
+      .about span {
+        text-decoration: underline;
+      }
+      .about p {
+        font-size: 10px;
+      }
+      .container h1 {
+        font-size: 38px;
+      }
+      .about span {
+        cursor: pointer;
+      }
+      .btn:hover {
+        transform: scale(1.05);
+      }
+
+      .premium {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 70px 30px;
+      }
+      .premium .features {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        gap: 80px;
+        margin-top: 60px;
+      }
+      .features .ft {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 8px;
+      }
+      .ft i {
+        font-size: 70px;
+        background: rgb(220, 218, 218);
+        border-radius: 50%;
+        line-height: 140px;
+        width: 140px;
+        height: 140px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .std {
+        max-width: 750px;
+        width: 90%;
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25),
+          -4px -4px 12px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .std .bt {
+        padding: 14px 40px;
+        color: rgb(1, 1, 1);
+        text-transform: uppercase;
+        border-radius: 50px;
+        outline: none;
+        cursor: pointer;
+        border: 2px solid black;
+        background: transparent;
+      }
+      .std .bt:hover {
+        transform: scale(1.05);
+      }
+      .std-part {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .footer {
+        margin-top: 100px;
+        width: 100%;
+        height: 60vh;
+        padding: 60px 40px;
+        background-color: black;
+      }
+      .sub-footer {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+      .sub-footer h2 {
+        color: #fff;
+      }
+      .sub-footer p {
+        color: rgb(186, 178, 178);
+      }
+      .sub-footer ul li {
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        margin-top: 15px;
+      }
+      .sub-footer .icons {
+        cursor: pointer;
+        color: #fff;
+        text-align: center;
+        font-size: 24px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        background-color: rgb(59, 59, 59);
+        border-radius: 50%;
+        margin-right: 10px;
+        transition: all 0.5s;
+      }
+      .icons:hover {
+        color: #1db954;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cross">
+      <i id="cut" class="fa-solid fa-circle-xmark"></i>
+    </div>
+    <div class="header">
+      <h2><i class="fa-brands fa-spotify"></i>Spotify</h2>
+      <nav>
+        <li><a href="#" class="bold">Premium</a></li>
+        <li><a href="#" class="bold">Support</a></li>
+        <li><a href="#" class="bold">Download</a></li>
+        <li><a href="#">|</a></li>
+        <li>
+          <a href="#" class="bold">Sign up</a>
+        </li>
+        <li>
+          <a href="#" class="bold">Log in</a>
+        </li>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="about">
+        <h1>Get Premium free for 1 month</h1>
+        <h3>
+          Just ₹119/month after. Debit and credit cards accepted. Cancel
+          anytime.
+        </h3>
+        <div class="btns">
+          <button class="btn first" style="margin-right: 4px">
+            GET STARTED
+          </button>
+          <button class="btn second">SEE OTHER PLANS</button>
+        </div>
+        <p>
+          <span>Terms and conditions apply.</span> 1 month free not available
+          for users who have already tried Premium.
+        </p>
+      </div>
+    </div>
+
+    <div class="premium">
+      <h1>The power of Premium</h1>
+      <div class="features">
+        <div class="ft">
+          <i class="fa-sharp fa-solid fa-music"></i>
+          <h3>Ad-free music listening</h3>
+          <p>Enjoy uninterrupted music.</p>
+        </div>
+
+        <div class="ft">
+          <i class="fa-sharp fa-solid fa-house"></i>
+          <h3>Ad-free music listening</h3>
+          <p>Enjoy uninterrupted music.</p>
+        </div>
+
+        <div class="ft">
+          <i class="fa-sharp fa-solid fa-wand-magic-sparkles"></i>
+          <h3>Ad-free music listening</h3>
+          <p>Enjoy uninterrupted music.</p>
+        </div>
+
+        <div class="ft">
+          <i class="fa-sharp fa-solid fa-clipboard"></i>
+          <h3>Ad-free music listening</h3>
+          <p>Enjoy uninterrupted music.</p>
+        </div>
+      </div>
+    </div>
+    <div class="std-part">
+      <div class="std">
+        <h3>Special discount for eligible students in university</h3>
+        <button class="bt">LEARN MORE</button>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="sub-footer">
+        <h2><i class="fa-brands fa-spotify"></i>Spotify</h2>
+        <div>
+          <p>company</p>
+          <ul>
+            <li>About</li>
+            <li>Jobs</li>
+            <li>For the record</li>
+          </ul>
+        </div>
+        <div>
+          <p>communities</p>
+          <ul>
+            <li>For Artists</li>
+            <li>Developers</li>
+            <li>Network</li>
+            <li>Animation</li>
+            <li>Editing</li>
+          </ul>
+        </div>
+        <div>
+          <p>useful links</p>
+          <ul>
+            <li>About</li>
+            <li>Jobs</li>
+            <li>For the record</li>
+          </ul>
+        </div>
+        <div>
+          <i class="fa-brands fa-instagram icons"></i>
+          <i class="fa-brands fa-twitter icons"></i>
+          <i class="fa-brands fa-facebook-f icons"></i>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var cross = document.getElementById("cross");
+      var cut = document.getElementById("cut");
+      cut.onclick = function () {
+        cross.style.display = "none";
+      };
+    </script>
+  </body>
+</html>

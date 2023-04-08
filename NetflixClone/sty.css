@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Bodoni+Moda:ital,opsz,wght@0,6..96,900;1,6..96,400&family=Exo+2:wght@100&family=Lato&family=Oswald:wght@300&family=Poppins:wght@400;500&family=Roboto+Slab:wght@300;400&family=Roboto:wght@400;500&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background: #000;
+    color: #fff;
+}
+.header{
+    width: 100%;
+    height: 110vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)),url('./netflix-assets/header.jpg');
+    background-size: cover;
+    background-position: center;
+    /* display: flex; */
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    position:relative;
+}
+h4{
+    font-size: 1rem;
+}
+h3{
+    font-size: 1.2rem;
+}
+h1{
+    font-size: 3rem ;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid green; */
+    padding: 0px 50px;
+
+}
+.logo img{
+    width: 150px;
+}
+.btn{
+    padding: 7px 14px;
+    font-size: 12px;
+    background-color: white;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+    background: #db0001;
+    border-radius: 4px;
+    transition: all .2s ease-out;
+    cursor: pointer;
+}
+.log-btn:hover{
+    background: #c10101;
+}
+.fa-solid{
+    font-size: 12px;
+    color: white;
+    margin: 4px;
+    padding: 2px;
+}
+.content{
+
+ padding: 20px;
+ width: 100%;
+ position: absolute;
+ top: 65%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+}
+.header-content{
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.forms{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.forms .email-fill{
+    height: 60px;
+    width: 370px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+    color: rgb(255, 255, 255);
+    background-color: rgba(41, 39, 39, 0.8);
+    border: 1px solid white;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn-fill{
+    height: 60px;
+    width: 180px;
+    outline: 0;
+    border: 0;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: #db0001;
+    color: white;
+    cursor: pointer;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(255, 255, 255);
+    opacity: 1; /* Firefox */
+  }
+  hr{
+    height: 8px;
+    background-color: rgb(58 58 58);
+    border: none;
+    outline: none;
+  }
+  .contents{
+    width: 40%;
+    text-align: justify;
+    padding: 0px 60px;
+    /* border: 1px solid white; */
+  }
+  .image{
+    width: 40%;
+    /* border: 1px solid white; */
+  }
+  .image img{
+    width: 400px;
+    padding: 10px;
+  }
+  .first-feature{
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 70px;
+  }
+  .subques{
+    border: 1px solid white;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 180px;
+    background: #252525;
+  }
+  .faq-heading h1{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  .eamil-vari{
+    background-color: rgba(17, 16, 16, 0.8) !important;
+  }
+  .questions a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.25s ease-out;
+  }
+  .questions a:hover{
+   background-color: #3f3f3f;
+  }
+  .footer-section{
+    padding: 80px;
+    justify-content: space-around;
+    align-items: start;
+  }
+  .col{
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+  }
+  .footer-section .col a{
+    color: white;
+  }
+/* .content .header-content h4{
+    font-size: ;
+} */
