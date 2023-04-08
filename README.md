@@ -18,8 +18,8 @@
 
 🎯[9.PDF Tutorial](https://ghanendrabhardwaj19.github.io/My-Projects/PDFTut/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/PDFTut/index.html)
 
-🎯[10.PDF Tutorial](https://ghanendrabhardwaj19.github.io/My-Projects/UsabilityhubClone/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/UsabilityhubClone)
+🎯[10.UsabilityHub Website Clone](https://ghanendrabhardwaj19.github.io/My-Projects/UsabilityhubClone/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/UsabilityhubClone)
 
-🎯[11.PDF Tutorial](https://ghanendrabhardwaj19.github.io/My-Projects/SpotifyClone/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/SpotifyClone/index.html)
+🎯[11.Spotify Clone](https://ghanendrabhardwaj19.github.io/My-Projects/SpotifyClone/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/SpotifyClone/index.html)
 
-🎯[12.PDF Tutorial](https://ghanendrabhardwaj19.github.io/My-Projects/WavyTut/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/WavyTut/index.html)
+🎯[12.Wavy UI](https://ghanendrabhardwaj19.github.io/My-Projects/WavyTut/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/WavyTut/index.html)
