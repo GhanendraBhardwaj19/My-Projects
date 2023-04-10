@@ -39,3 +39,5 @@
 🎯[18.Bootstrap Project](https://ghanendrabhardwaj19.github.io/My-Projects/BootstrapProject/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/BootstrapProject)
 
 🎯[19.Beautiful Footer](https://ghanendrabhardwaj19.github.io/My-Projects/footer/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/footer/index.html)
+
+🎯[20.Beautiful Carousel](https://ghanendrabhardwaj19.github.io/My-Projects/HTMLCSSSlider/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/HTMLCSSSlider)
