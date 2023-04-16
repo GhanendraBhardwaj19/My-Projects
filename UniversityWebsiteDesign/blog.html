@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../UniversityWebsiteDesign/style.css" />
+    <script
+      src="https://kit.fontawesome.com/f7c5396a66.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>University Website Design</title>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="../img/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-circle-xmark icons" onclick="closeMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars icons" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>Our Certificate & Online Programs For 2021</h1>
+    </section>
+
+    <section class="blog-content">
+      <div class="row">
+        <div class="blog-left">
+          <img src="../img/certificate.jpg" />
+          <h2>Our Certificate & Online Programs For 2021</h2>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            hic commodi adipisci incidunt soluta et, dolor a neque architecto,
+            sed quasi officiis? Ab, itaque.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias
+            aut impedit nam id labore ipsum vel accusantium repudiandae, animi
+            alias, quod quam cumque reprehenderit cupiditate nisi adipisci
+            doloremque mollitia, sint neque atque iusto expedita quia veritatis!
+            Asperiores voluptatem explicabo qui accusamus, voluptas a odio ab.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum at
+            amet ea quo, ratione nemo rerum nihil sint, quaerat doloremque
+            consectetur distinctio vero totam eaque fugit pariatur obcaecati
+            quis commodi. Neque quia asperiores maiores itaque, minima
+            distinctio omnis illo cupiditate recusandae sint in assumenda
+            incidunt dignissimos voluptatibus tenetur animi a eveniet, modi
+            nesciunt quidem. Voluptatem fugiat animi, molestiae alias magni
+            laudantium molestias nobis optio.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam,
+            blanditiis? Nulla repudiandae obcaecati aspernatur, alias voluptatem
+            incidunt reprehenderit? Error qui consequatur molestiae fuga nulla.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum at
+            amet ea quo, ratione nemo rerum nihil sint, quaerat doloremque
+            consectetur distinctio vero totam eaque fugit pariatur obcaecati
+            quis commodi. Neque quia asperiores maiores itaque, minima
+            distinctio omnis illo cupiditate recusandae sint in assumenda
+            incidunt dignissimos voluptatibus tenetur animi a eveniet, modi
+            nesciunt quidem. Voluptatem fugiat animi, molestiae alias magni
+            laudantium molestias nobis optio.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias
+            aut impedit nam id labore ipsum vel accusantium repudiandae, animi
+            alias, quod quam cumque reprehenderit cupiditate nisi adipisci
+            doloremque mollitia, sint neque atque iusto expedita quia veritatis!
+            Asperiores voluptatem explicabo qui accusamus, voluptas a odio ab.
+          </p>
+
+          <div class="comment-box">
+            <h3>Leave a Comment</h3>
+
+            <form class="comment-form">
+              <input type="text" placeholder="Enter Name" />
+              <input type="text" placeholder="Enter Email" />
+              <textarea rows="5" placeholder="Your Comment"></textarea>
+              <button type="submit" class="hero-btn red-btn">
+                POST COMMENT
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="blog-right">
+          <h3>Post Catagories</h3>
+          <div>
+            <span>Business Analytics</span>
+            <span>28</span>
+          </div>
+          <div>
+            <span>Machine Learning</span>
+            <span>31</span>
+          </div>
+          <div>
+            <span>Web Development</span>
+            <span>42</span>
+          </div>
+          <div>
+            <span>AutoCAD</span>
+            <span>18</span>
+          </div>
+          <div>
+            <span>Computer Science</span>
+            <span>14</span>
+          </div>
+          <div>
+            <span>Journalism</span>
+            <span>23</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo fuga a
+        molestiae voluptatem ipsa <br />
+        nobis nemo, enim in, repellendus, aperiam totam dolore.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by Ghanendra Bhardwaj</p>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0px";
+      }
+
+      function closeMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
