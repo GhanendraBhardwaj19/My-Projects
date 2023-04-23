@@ -52,3 +52,6 @@
 🎯[24.Palindrome Checker](https://ghanendrabhardwaj19.github.io/My-Projects/palindrome/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/palindrome)
 
 🎯[25.Random Color Generator](https://ghanendrabhardwaj19.github.io/My-Projects/randomcolor/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/randomcolor/index.html)
+
+
+🎯[26.Random Color Generator](https://ghanendrabhardwaj19.github.io/My-Projects/PasswordGenerator/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/PasswordGenerator)
