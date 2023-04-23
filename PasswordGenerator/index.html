@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../PasswordGenerator/style.css" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <form>
+          <input
+            type="text"
+            name="text"
+            placeholder="Your 8 charcter password"
+            id="text"
+          />
+        </form>
+        <button type="button" id="gen">GENERATE</button>
+      </div>
+    </div>
+
+    <script>
+      var gen = document.getElementById("gen");
+      var text = document.getElementById("text");
+
+      gen.onclick = function () {
+        var p_length = 8;
+        var p =
+          "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()_+{}[]<>?";
+        var password = "";
+        for (var i = 0; i <= p_length; i++) {
+          var randomNumber = Math.floor(Math.random() * p.length);
+          password += p.charAt(randomNumber);
+        }
+        console.log(password);
+        text.value = password;
+      };
+    </script>
+  </body>
+</html>
