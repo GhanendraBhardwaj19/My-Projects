@@ -12,7 +12,7 @@
 
 🎯[6.Digital Watch](https://ghanendrabhardwaj19.github.io/My-Projects/watch/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/watch/index.html)
 
-🎯[7.SoloMusic](https://ghanendrabhardwaj19.github.io/My-Projects/SoloMusic/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/SoloMusic/index.html)
+🎯[7.SoloMusic(My first website)](https://ghanendrabhardwaj19.github.io/My-Projects/SoloMusic/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/SoloMusic/index.html)
 
 🎯[8.NetflixClone](https://ghanendrabhardwaj19.github.io/My-Projects/NetflixClone/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/NetflixClone)
 
