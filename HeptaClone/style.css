@@ -378,3 +378,44 @@ h1 {
     font-size: 14px;
   }
 }
+
+.footer {
+  background: #000;
+  padding: 40px;
+}
+.footer-row {
+  color: #fff;
+  padding: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footer-col {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+}
+.footer-row p {
+  color: #9ea6a9;
+}
+.footer-col input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #9ea6a9;
+  padding: 10px 5px;
+  background: transparent;
+  color: #fff;
+  font-style: italic;
+}
+
+@media screen and (max-width: 770px) {
+  .footer-row {
+    flex-wrap: wrap;
+  }
+  .footer-col {
+    padding-top: 40px;
+    flex-basis: 100%;
+  }
+}
