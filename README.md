@@ -58,5 +58,5 @@
 
 🎯[27.Hepta Clone](https://ghanendrabhardwaj19.github.io/My-Projects/HeptaClone/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/HeptaClone)
 
-🎯[28.Beautiful UI Clone](https://ghanendrabhardwaj19.github.io/My-Projects/Beautiful UI Clone/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/Beautiful UI Clone)
+🎯[28.Beautiful UI Clone](https://ghanendrabhardwaj19.github.io/My-Projects/BeautifulUIClone/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/BeautifulUIClone)
 
