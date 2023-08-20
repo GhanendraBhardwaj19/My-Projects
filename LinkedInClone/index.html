@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkedIn - By Ghanendra Bhardwaj</title>
+    <script
+      src="https://kit.fontawesome.com/f7c5396a66.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <!-- .....left nav starts........... -->
+      <div class="left-nav">
+        <a href="#"><img src="images/logo.png" /></a>
+        <div class="search-box">
+          <img src="images/search.png" />
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+
+      <!-- .............middle nav starts......... -->
+
+      <div class="middle-nav">
+        <a href="#" class="active"
+          ><img src="images/home.png" />
+          <p>Home</p></a
+        >
+        <a href="#"
+          ><img src="images/network.png" />
+          <p>My Network</p></a
+        >
+        <a href="#"
+          ><img src="images/jobs.png" />
+          <p>Jobs</p></a
+        >
+        <a href="#"
+          ><img src="images/message.png" />
+          <p>Messaging</p></a
+        >
+        <a href="#"
+          ><img src="images/notification.png" />
+          <p>Notifications</p></a
+        >
+      </div>
+
+      <!-- .............right nav starts................ -->
+
+      <div class="right-nav">
+        <a href="#">
+          <img src="images/profile.jpeg" />
+        </a>
+        <div>
+          <p>Me</p>
+          <a href="#" class="down-arrow"
+            ><img src="images/down-arrow.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ..............navbar............... -->
+
+    <div class="container">
+      <!-- .........left sidebar............ -->
+
+      <div class="left-sidebar">
+        <div class="profile-container">
+          <img src="images/stevej.jpeg" class="cover-img" width="100%" />
+          <div class="conn">
+            <a href="profile.html" target="_blank"
+              ><img src="images/profile.jpeg" class="profile-img"
+            /></a>
+          </div>
+
+          <div class="profile-info">
+            <h3>Ghanendra Bhardwaj</h3>
+            <small
+              >Student at Dr. A.P.J. Abdul Kalam <br />
+              Technical University</small
+            >
+          </div>
+
+          <div class="connections">
+            <div class="connection-inner">
+              <div class="conn">
+                <small>Connections</small>
+                <span>7</span>
+              </div>
+
+              <b>Connection with alumani</b>
+            </div>
+          </div>
+
+          <div class="my-items">
+            <div class="items">
+              <img src="images/items.png" />
+              <p>My Items</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="groups" id="showGroup">
+          <div class="info">
+            <p class="underline">Groups</p>
+
+            <div class="events">
+              <small class="underline">Events</small>
+              <h4 class="plus">+</h4>
+            </div>
+            <p class="underline">Followed Hashtags</p>
+          </div>
+          <div class="discover-more">
+            <p>Discover more</p>
+          </div>
+        </div>
+        <div class="show-all" id="showMoreLink" onclick="toggleGroup()">
+          Show more +
+        </div>
+      </div>
+
+      <!-- ...........main content ...........-->
+
+      <div class="main-content">
+        <div class="create-post">
+          <div class="write-post">
+            <a href=""><img src="images/profile.jpeg" /></a>
+            <input type="text" placeholder="Start a post" />
+          </div>
+          <div class="post-type">
+            <div class="post-type-img">
+              <i class="fa-solid fa-image blue"></i>
+              <p>Photo</p>
+            </div>
+            <div class="post-type-img">
+              <i class="fa-solid fa-video green"></i>
+              <p>Video</p>
+            </div>
+            <div class="post-type-img">
+              <i class="fa-solid fa-calendar-days orange"></i>
+              <p>Event</p>
+            </div>
+            <div class="post-type-img">
+              <i class="fa-solid fa-newspaper red"></i>
+              <p>Write article</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sort-by">
+          <hr />
+          <div class="top">
+            <p>
+              Sort by: <span>Top<img src="images/down-arrow.png" /></span>
+            </p>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="user-info">
+            <img src="images/shraddha.jpeg" />
+            <div class="user-data">
+              <h3>Shraddha Khapra &middot;<span>Following</span></h3>
+              <p>Co-founder,Apna College | Ex-Microsoft | Tedx Speaker |</p>
+              <small>19h &middot;<i class="fa-solid fa-globe"></i></small>
+            </div>
+          </div>
+          <p class="caption">Can we get a job without doing an Internship?</p>
+          <img src="images/khapra.jpeg" class="khapra" />
+
+          <div class="likes-panel">
+            <div class="reactions">
+              <div>
+                <img src="images/thumbsup.png" />
+                <img src="images/clap.png" class="icon" />
+                <img src="images/love.png" class="icon" />
+              </div>
+              <p>15,234</p>
+            </div>
+            <div class="comments">
+              <p>106 commetns &middot; 18 reposts</p>
+            </div>
+          </div>
+          <hr />
+
+          <div class="post-interaction">
+            <div class="post-interaction-type">
+              <img src="images/like.png" alt="" />
+              <p>Like</p>
+            </div>
+            <div class="post-interaction-type">
+              <img src="images/comment.png" alt="" />
+              <p>Comment</p>
+            </div>
+            <div class="post-interaction-type">
+              <img src="images/share.png" alt="" />
+              <p>Share</p>
+            </div>
+            <div class="post-interaction-type">
+              <img src="images/send.png" alt="" />
+              <p>Send</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="user-info">
+            <img src="images/amanpro.jpeg" />
+            <div class="user-data">
+              <h3>AMAN DHATTARWAL &middot;<span>3rd+</span></h3>
+              <p>Founder of ApniKaksha & Apna College|</p>
+              <small>2mo &middot;<i class="fa-solid fa-globe"></i></small>
+            </div>
+          </div>
+          <p class="caption">
+            So,hello everyone,We are going to start Delta 2.0
+          </p>
+          <img src="images/aman.jpeg" class="khapra" />
+
+          <div class="likes-panel">
+            <div class="reactions">
+              <div>
+                <img src="images/thumbsup.png" />
+                <img src="images/clap.png" class="icon" />
+                <img src="images/love.png" class="icon" />
+              </div>
+              <p>12,475</p>
+            </div>
+            <div class="comments">
+              <p>95 commetns &middot; 21 reposts</p>
+            </div>
+          </div>
+          <hr />
+
+          <div class="post-interaction">
+            <div class="post-interaction-type">
+              <img src="images/like.png" alt="" />
+              <p>Like</p>
+            </div>
+            <div class="post-interaction-type">
+              <img src="images/comment.png" alt="" />
+              <p>Comment</p>
+            </div>
+            <div class="post-interaction-type">
+              <img src="images/share.png" alt="" />
+              <p>Share</p>
+            </div>
+            <div class="post-interaction-type">
+              <img src="images/send.png" alt="" />
+              <p>Send</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="user-info">
+            <img src="images/babbarpro.jpeg" />
+            <div class="user-data">
+              <h3>Love Babbar &middot;<span>3rd+</span></h3>
+              <p>Founder - Codehelp | SSB Recommended |Youtuber |</p>
+              <small>15h ago &middot;<i class="fa-solid fa-globe"></i></small>
+            </div>
+          </div>
+          <p class="caption">4 Days to go ⏰</p>
+          <p class="caption">
+            We are starting off with DSA Supreme 2.0 in 4 days and it is a
+            limited time opportunity to accelerate your DSA at just 4 Rs per
+            day.
+          </p>
+
+          <img src="images/babbar.jpeg" class="khapra" />
+
+          <div class="likes-panel">
+            <div class="reactions">
+              <div>
+                <img src="images/thumbsup.png" />
+                <img src="images/clap.png" class="icon" />
+                <img src="images/love.png" class="icon" />
+              </div>
+              <p>1,475</p>
+            </div>
+            <div class="comments">
+              <p>15 commetns &middot; 2 reposts</p>
+            </div>
+          </div>
+          <hr />
+
+          <div class="post-interaction">
+            <div class="post-interaction-type">
+              <img src="images/like.png" alt="" />
+              <p>Like</p>
+            </div>
+            <div class="post-interaction-type">
+              <img src="images/comment.png" alt="" />
+              <p>Comment</p>
+            </div>
+            <div class="post-interaction-type">
+              <img src="images/share.png" alt="" />
+              <p>Share</p>
+            </div>
+            <div class="post-interaction-type">
+              <img src="images/send.png" alt="" />
+              <p>Send</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="user-info">
+            <img src="images/chaharpro.jpeg" />
+            <div class="user-data">
+              <h3>Nishant Chahar &middot;<span>3rd+</span></h3>
+              <p>SDE @ Microsoft | 300k + Subs on YT | Teacher |</p>
+              <small>4d &middot;<i class="fa-solid fa-globe"></i></small>
+            </div>
+          </div>
+          <p class="caption">
+            Many aspiring and beginner coders struggle to find the right
+            resources, guidance, and feedback to improve their skills and
+            advance their careers.
+          </p>
+          <p class="caption">
+            If you are looking for the best platforms to learn to code and get
+            mentorship from experienced developers. You are not alone ✅
+          </p>
+          <p class="caption">
+            That’s why I decided to share with you my top 5 coding and
+            mentorship platforms that I have used or heard good things about.
+          </p>
+          <p class="caption">
+            Do check out the video link given in the comment section for
+            complete info ⬇️
+          </p>
+          <p class="caption">
+            #platforms #coding #learncode #softwareengineers #engineeringlife
+          </p>
+          <img src="images/chahar.jpeg" class="khapra" />
+
+          <div class="likes-panel">
+            <div class="reactions">
+              <div>
+                <img src="images/thumbsup.png" />
+                <img src="images/clap.png" class="icon" />
+                <img src="images/love.png" class="icon" />
+              </div>
+              <p>12,475</p>
+            </div>
+            <div class="comments">
+              <p>95 commetns &middot; 21 reposts</p>
+            </div>
+          </div>
+          <hr />
+
+          <div class="post-interaction">
+            <div class="post-interaction-type">
+              <img src="images/like.png" alt="" />
+              <p>Like</p>
+            </div>
+            <div class="post-interaction-type">
+              <img src="images/comment.png" alt="" />
+              <p>Comment</p>
+            </div>
+            <div class="post-interaction-type">
+              <img src="images/share.png" alt="" />
+              <p>Share</p>
+            </div>
+            <div class="post-interaction-type">
+              <img src="images/send.png" alt="" />
+              <p>Send</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ...........right sidebar................. -->
+      <div class="right-sidebar">
+        <div class="news-container">
+          <div class="heading">
+            <p>LinkedIn News</p>
+            <img src="images/more.png" />
+          </div>
+          <div class="headlines-container">
+            <div class="headlines">
+              <i class="fa-solid fa-circle dot"></i>
+              <div class="headlines-inner">
+                <p>Upskilling, the way forward</p>
+                <span>Top News</span>
+              </div>
+            </div>
+
+            <div class="headlines">
+              <i class="fa-solid fa-circle dot"></i>
+              <div class="headlines-inner">
+                <p>Broadcasting’s FDI windfall</p>
+                <span>15h ago</span>
+              </div>
+            </div>
+
+            <div class="headlines">
+              <i class="fa-solid fa-circle dot"></i>
+              <div class="headlines-inner">
+                <p>Gearing up for a career in automation</p>
+                <span>2d ago</span>
+              </div>
+            </div>
+
+            <div class="headlines">
+              <i class="fa-solid fa-circle dot"></i>
+              <div class="headlines-inner">
+                <p>Luxury brands eye Indian buyers</p>
+                <span>18h ago</span>
+              </div>
+            </div>
+            <div class="headlines">
+              <i class="fa-solid fa-circle dot"></i>
+              <div class="headlines-inner">
+                <p>SaaS firms hire amid downturn</p>
+                <span>13h ago</span>
+              </div>
+            </div>
+          </div>
+          <a class="btn">
+            <p>See more</p>
+            <img src="images/down-arrow.png" />
+          </a>
+        </div>
+        <div class="advertisement">
+          <div class="top">
+            <p>Ad</p>
+            <span
+              ><i class="fa-solid fa-circle dot"></i
+              ><i class="fa-solid fa-circle dot"></i
+              ><i class="fa-solid fa-circle dot"></i
+            ></span>
+          </div>
+          <p class="center-text">
+            Ghanendra,boost your job search with premium
+          </p>
+          <div class="center-img">
+            <img src="images/profile.jpeg" class="img-1" />
+            <img src="images/ln.jpeg" class="img-2" />
+          </div>
+          <p class="center-text views-text">
+            See who's viewed your profile in the last 90 days
+          </p>
+
+          <div class="button-ln">
+            <a href="#" class="button">Try for fee!</a>
+          </div>
+        </div>
+
+        <div class="footer-panel">
+          <div class="panel-1">
+            <a>About</a>
+            <a>Accessibility</a>
+            <a>Help Center</a>
+            <a>Privacy & Terms</a>
+            <a>Ad Choices</a>
+            <a>Advertising</a>
+
+            <a>Get the LinkedIn app</a>
+            <a>More</a>
+          </div>
+          <div class="copyright-msg">
+            <img src="images/logo.png" alt="" />
+            <p>LinkedIn Corporation © 2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    let showGroup = document.getElementById("showGroup");
+    let moreLink = document.getElementById("showMoreLink");
+    function toggleGroup() {
+      showGroup.classList.toggle("open-group");
+
+      if (showGroup.classList.contains("open-group")) {
+        moreLink.innerHTML = "Show less <b>-</b>";
+      } else {
+        moreLink.innerHTML = "Show more <b>+</b>";
+      }
+    }
+  </script>
+</html>
