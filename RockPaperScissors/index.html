@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock , Paper & Scissors - By Ghanendra Bhardwaj</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-heading">
+        <h1>Welocome to Rock , Paper & Scissors</h1>
+        <button class="btn" id="pAgain">Play Again</button>
+        <a href="coins.html"
+          ><button class="btn" id="your-coins">Your Coins</button></a
+        >
+      </div>
+      <div class="inner-container">
+        <div class="results">
+          <div class="border"></div>
+          <div class="left">
+            <p id="user">
+              <b>You - </b> - <span id="uwin">| Wins - 0 |</span>
+              <span id="uloss"> Loses - 0 |</span>
+              <span id="tie">Tied - 0</span>
+            </p>
+          </div>
+          <div class="right">
+            <p id="computer">
+              <b>Computer - </b> <span id="cwin">| Wins - 0 |</span>
+              <span id="closs"> Loses - 0 |</span>
+              <span class="tie">Tied - 0</span>
+            </p>
+          </div>
+        </div>
+        <div class="posture">
+          <div class="user-posture">
+            <i class="fa-regular fa-face-rolling-eyes fa-shake"></i>
+          </div>
+          <img src="vers.png" alt="" />
+          <div class="computer-posture">
+            <i class="fa-regular fa-face-rolling-eyes fa-shake"></i>
+          </div>
+        </div>
+        <div class="icons">
+          <a href="#" onclick="userInput('rock')"
+            ><i class="fa-solid fa-hand-back-fist"></i
+          ></a>
+          <a href="#" onclick="userInput('paper')"
+            ><i class="fa-solid fa-hand"></i
+          ></a>
+          <a href="#" onclick="userInput('scissors')">
+            <i class="fa-solid fa-hand-scissors scissors"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f7c5396a66.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

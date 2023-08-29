@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box">
+      <div class="inner-box">
+        <img src="coins.png" alt="" />
+        <h1 id="coins">You have <span>0</span> coins !</h1>
+      </div>
+    </div>
+
+    <script>
+      let coin_count = localStorage.getItem("coins");
+
+      let parsedCoinCount = parseInt(coin_count);
+      if (parsedCoinCount <= 0) {
+        localStorage.setItem("coins", 0);
+      }
+
+      let coinElement = document.getElementById("coins");
+      coinElement.innerHTML = `You have <span>${parsedCoinCount}</span> coins !`;
+    </script>
+  </body>
+</html>
