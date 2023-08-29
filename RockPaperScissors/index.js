@@ -60,10 +60,10 @@ function userInput(value) {
 function getWinner(v, cv) {
   if (v == cv) {
     tie++;
-    user.innerHTML = ` You - <span>| Wins - ${uwin} |</span>
+     user.innerHTML = ` <b> You - </b> <span>| Wins - ${uwin} |</span>
     <span> Loses -  ${uloss} |</span>
     <span >Tied - ${tie}</span>`;
-    computer.innerHTML = ` You - <span>| Wins - ${cwin} |</span>
+    computer.innerHTML = ` <b> Computer - </b> <span>| Wins - ${cwin} |</span>
     <span> Loses -  ${closs} |</span>
     <span >Tied - ${tie}</span>`;
   } else if (
