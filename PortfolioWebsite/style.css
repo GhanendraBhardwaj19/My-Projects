@@ -548,7 +548,7 @@ html {
   text-align: center;
 }
 .footer i {
-  color: rgb(34, 105, 193);
+  color: rebeccapurple;
 }
 
 .navbar i {
@@ -576,7 +576,7 @@ html {
     color: #fff;
     transition: all 0.3s;
     z-index: 2;
-    padding:40px 0;
+    padding: 40px 0;
   }
   .navbar ul li {
     display: block;
@@ -586,7 +586,7 @@ html {
     color: #fff;
   }
   .navbar ul li a:hover {
-    color: rgb(41, 104, 177);
+    color: rebeccapurple;
   }
   .navbar ul i {
     position: absolute;
@@ -594,8 +594,8 @@ html {
     left: 20px;
     cursor: pointer;
   }
-   .navbar ul li a.active-link {
-    color: rgb(31, 101, 175);
+  .navbar ul li a.active-link {
+    color: rebeccapurple;
   }
   .flex-wrap {
     flex-wrap: wrap;
