@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha384-ezFbFIE5nNq+0F6Cz5US3SM5R5n6f+E+kzX9dP6AHC5Nha5dFof5Y2/KoPhz5C5fF"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+   
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>GB</h1>
+      <ul id="sidemenu">
+        <li><a href="#header" class="active-link">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+      <i class="fas fa-bars"onclick="showmenu()"></i>
+    </div>
+    <div id="header">
+      <div class="container flex flex-wrap overflow">
+        <div class="header-content">
+          <p>Web Developer</p>
+          <h1>Hi, I am <span>Ghanendra</span><br />Bhardwaj From India</h1>
+          <div class="buttons flex flex-wrap overflow">
+            <button class="btn btn-1">Download CV</button>
+            <button class="btn btn-2">Contact Me</button>
+          </div>
+        </div>
+        <div class="header-img">
+          <img src="./assets/avtar.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- *************** about me ***************** -->
+    <div id="about" class="padding-top pt">
+      <h1 class="main-heading">About Me</h1>
+      <div class="about-container box-shadow">
+        <div class="about-img">
+          <img src="./assets/ghanendra.JPG" alt="" />
+        </div>
+        <div class="about-text">
+          <b>I am Ghanendra Bhardwaj and i'm a <span>Web Developer</span></b>
+          <p>
+            I am from Aligarh, Uttar Pradesh, part of a nuclear family with a
+            farming father and homemaker mother, along with three elder sisters.
+            I am pursuing a B.Tech in Computer Science at Hitech Institute of
+            Engineering and Technology, specializing in MERN Stack development.
+            Proficient in various programming languages and passionate about a
+            career in software development, my hobbies include reading and
+            music.
+          </p>
+          <div class="icons">
+            <a href="https://youtube.com/@ghanendrabhardwaj"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://youtube.com/@ghanendrabhardwaj"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com/@ghanendrabhardwaj"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://youtube.com/@ghanendrabhardwaj"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- **************  services section **************** -->
+
+    <div id="services" class="padding-top pt">
+      <h1 class="main-heading">Our Services</h1>
+      <div class="services-container flex">
+        <div class="my-services box-shadow">
+          <i class="fa-brands fa-react"></i>
+          <b>React Development</b>
+          <p>
+            Creating dynamic and interactive web applications with the power of React.js.
+          </p>
+          <i class="fa-solid fa-arrow-right arrow"></i>
+        </div>
+        <div class="my-services box-shadow">
+          <i class="fa-brands fa-bootstrap"></i>
+          <b>Bootstrap Development</b>
+          <p>
+            Designing responsive and visually appealing websites using Bootstrap's CSS framework
+          </p>
+          <i class="fa-solid fa-arrow-right arrow"></i>
+        </div>
+        <div class="my-services box-shadow">
+          <i class="fa-brands fa-js"></i>
+          <b>JavaScript Development</b>
+          <p>
+            Crafting custom, feature-rich web solutions through JavaScript expertise.
+          </p>
+          <i class="fa-solid fa-arrow-right arrow"></i>
+        </div>
+      </div>
+    </div>
+    <!-- ************porjects************* -->
+
+    <div id="projects" class="padding-top pt">
+      <h1 class="main-heading">Latest Projects</h1>
+      <div class="projects-container flex">
+        <div class="my-projects project-1 box-shadow">
+          <img src="./assets/img-1.jpg" alt="" />
+          <div class="layer">
+            <h2>Weather App</h2>
+            <p>
+              A weather application that provides real-time weather updates and forecasts for any location.
+            </p>
+            <a href="https://ghanendrabhardwaj19.github.io/My-Projects/LinkedInClone/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="my-projects project-2 box-shadow">
+          <img src="./assets/img-2.jpg" alt="" />
+          <div class="layer">
+            <h2>LinkedIn Clone</h2>
+            <p>
+              A frontend representation of a professional networking platform, offering a glimpse into the user interface and design elements of LinkedIn.
+            </p>
+            <a href="https://ghanendrabhardwaj19.github.io/My-Projects/LinkedInClone/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="my-projects project-3 box-shadow">
+          <img src="./assets/img-4.jpg" alt="" />
+          <div class="layer">
+            <h2>Rock,Paper & Scissors</h2>
+            <p>
+              A classic game brought to life in the digital realm, where users can test their luck against the computer.
+            </p>
+            <a href="https://ghanendrabhardwaj19.github.io/My-Projects/RockPaperScissors/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="my-projects project-4 box-shadow">
+          <img src="./assets/img-3.jpg" alt="" />
+          <div class="layer">
+            <h2>Code Editor</h2>
+            <p>
+              A simple code editor providing a basic coding environment for writing and testing code snippets.
+            </p>
+            <a href="https://ghanendrabhardwaj19.github.io/My-Projects/CodeEditor/CodeEditor/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="my-projects project-5 box-shadow">
+          <img src="./assets/img-5.jpg" alt="" />
+          <div class="layer">
+            <h2>My Portfolio</h2>
+            <p>
+              A personal portfolio website designed to showcase my skills, creativity, and a selection of projects in web development and design.
+            </p>
+            <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="my-projects project-6 box-shadow">
+          <img src="./assets/img-6.jpg" alt="" />
+          <div class="layer">
+            <h2>Calculator</h2>
+            <p>
+              A basic calculator application for performing essential mathematical calculations with ease.
+            </p>
+            <a href="https://ghanendrabhardwaj19.github.io/My-Projects/calculator/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <a href="https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/README.md" class="btn btn-1">See More</a>
+      </div>
+    </div>
+
+    <!-- *********skills************* -->
+
+    <div id="skills" class="padding-top pt">
+      <h1 class="main-heading">My Skills</h1>
+      <div class="skills-container box-shadow">
+        <div class="skils-left">
+          <b>My creative skill & experiences.</b>
+          <p>
+            As a recent graduate with a B.Tech in Computer Science, I possess a
+            strong foundation in MERN Stack development, proficient in Java,
+            HTML, CSS, JavaScript, MongoDB, Express JS, React JS, Node JS, Git,
+            and GitHub. While I am a fresher in terms of professional
+            experience, my passion, dedication, and comprehensive skill set make
+            me a promising candidate for software development roles.
+          </p>
+          <a href="https://github.com/GhanendraBhardwaj19" class="btn btn-1">Read More</a>
+        </div>
+        <div class="skils-right">
+          <div class="percentage">
+            <p>HTML</p>
+            <b>90%</b>
+          </div>
+          <div class="div">
+            <div class="inner-div inner-div-1"></div>
+          </div>
+          <div class="percentage">
+            <p>CSS</p>
+            <b>60%</b>
+          </div>
+          <div class="div">
+            <div class="inner-div inner-div-2"></div>
+          </div>
+          <div class="percentage">
+            <p>JavaScript</p>
+            <b>70%</b>
+          </div>
+          <div class="div">
+            <div class="inner-div inner-div-3"></div>
+          </div>
+          <div class="percentage">
+            <p>JAVA</p>
+            <b>70%</b>
+          </div>
+          <div class="div">
+            <div class="inner-div inner-div-4"></div>
+          </div>
+          <div class="percentage">
+            <p>React JS</p>
+            <b>70%</b>
+          </div>
+          <div class="div">
+            <div class="inner-div inner-div-5"></div>
+          </div>
+          <div class="percentage">
+            <p>BootStrap</p>
+            <b>80%</b>
+          </div>
+          <div class="div">
+            <div class="inner-div inner-div-6"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ****************contact****************** -->
+
+    <div id="contact" class="padding-top pt overflow">
+      <h1 class="main-heading">Contact ME</h1>
+      <div class="contact-section flex">
+        <div class="contact-left box-shadow">
+          <b class="bold-text">Get in Touch</b>
+          <p class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+            quam cupiditate asperiores ullam molestiae eaque consequatur
+            veritatis maiores eveniet, error esse totam? Consequuntur, odio.
+          </p>
+          <div class="name-box box">
+            <i class="fa-solid fa-user"></i>
+            <div>
+              <b>name</b>
+              <p>Ghanendra Bhardwaj</p>
+            </div>
+          </div>
+          <div class="address-box box">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <b>Address</b>
+              <p>Bhojpur Baharpur Aligarh</p>
+            </div>
+          </div>
+          <div class="email-box box">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <b>Email</b>
+              <p>ghanendrasharma8@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right box-shadow">
+          <b class="bold-text">Message Me</b>
+          <form name="submit-to-google-sheet">
+            <div class="div">
+              <input type="text" name="Name" placeholder="Name" class="name-input" required />
+              <input type="email" name="Email" placeholder="Email" class="email-input" required />
+            </div>
+            <input type="text" name="Subject" placeholder="Subject" class="subject-input" />
+            <textarea class="message-input" name="Message" placeholder="Message"></textarea>
+            <button type="submit" class="btn btn-1">Message Me</button>
+            <p id="msg"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        Copyright &copy; Ghanendra , Made with
+        <i class="fa-solid fa-heart"></i> by Ghanendra Bhardwaj !</p>
+      </p>
+    </div>
+
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f7c5396a66.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 1500,
+      });
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwqgwtrT6iqYhg4L3_LQoGbpcMZuBmB4kDwjDnUdQW_kVyknF_ASZXQGY7gbo2CCrBZ/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg =document.getElementById("msg");
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+          msg.innerHTML = "message sent successfully !";
+          setTimeout(function(){
+            msg.innerHTML = "";
+          },5000);
+          form.reset();
+        })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+    
+  </body>
+</html>
