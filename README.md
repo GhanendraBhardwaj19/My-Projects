@@ -64,4 +64,4 @@
 
 🎯[30.RockPaperScissors Game](https://ghanendrabhardwaj19.github.io/My-Projects/RockPaperScissors/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/RockPaperScissors)
 
-🎯[30.Code Editor](https://ghanendrabhardwaj19.github.io/My-Projects/CodeEditor/CodeEditor/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/CodeEditor)
+🎯[31.Code Editor](https://ghanendrabhardwaj19.github.io/My-Projects/CodeEditor/CodeEditor/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/CodeEditor)
