@@ -19,3 +19,17 @@ function closemenu() {
 function showmenu() {
   sidemenu.style.right = "0";
 }
+
+let nav = document.getElementsByClassName("nav-link");
+let navlinks = Array.from(nav);
+console.log(navlinks);
+
+function active_ink() {
+  // for (link of nav) {
+  //   console.log(link.classList);
+  // }
+  navlinks.forEach((navlink) => {
+    navlink.classList.remove("active-link");
+  });
+  event.currentTarget.classList.add("active-link");
+}
