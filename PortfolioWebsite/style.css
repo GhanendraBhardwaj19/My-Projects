@@ -576,6 +576,7 @@ html {
     color: #fff;
     transition: all 0.3s;
     z-index: 2;
+    padding:40px 0;
   }
   .navbar ul li {
     display: block;
@@ -592,6 +593,9 @@ html {
     top: 20px;
     left: 20px;
     cursor: pointer;
+  }
+   .navbar ul li a.active-link {
+    color: rgb(31, 101, 175);
   }
   .flex-wrap {
     flex-wrap: wrap;
