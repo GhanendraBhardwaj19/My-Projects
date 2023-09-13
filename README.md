@@ -68,4 +68,4 @@
 
 🎯[32.My Portfolio](https://ghanendrabhardwaj19.github.io/My-Projects/PortfolioWebsite/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/PortfolioWebsite)
 
-🎯[33.Weather-Wave](https://ghanendrabhardwaj19.github.io/weather-app-react)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/PortfolioWebsite)
+🎯[33.Weather-Wave](https://ghanendrabhardwaj19.github.io/weather-app-react)💥[Source Code](https://github.com/GhanendraBhardwaj19/weather-app-react)
