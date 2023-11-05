@@ -72,7 +72,7 @@
 
 🎯[34.Tic Tac Toe](https://ghanendrabhardwaj19.github.io/react-js-projects/)💥[Source Code](https://github.com/GhanendraBhardwaj19/react-js-projects)
 
-🎯[35.Guess it](https://ghanendrabhardwaj19.github.io/guess-the-number)💥[Source Code](https://github.com/GhanendraBhardwaj19/guess-the-number)
+🎯[35.Guessify](https://ghanendrabhardwaj19.github.io/guessify)💥[Source Code](https://github.com/GhanendraBhardwaj19/guessify)
 
 
 
