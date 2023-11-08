@@ -74,7 +74,7 @@
 
 🎯[35.Guessify](https://ghanendrabhardwaj19.github.io/guessify)💥[Source Code](https://github.com/GhanendraBhardwaj19/guessify)
 
-🎯[36.Weather-Wave](https://ghanendrabhardwaj19.github.io/number-nine/)💥[Source Code](https://github.com/GhanendraBhardwaj19/number-nine)
+🎯[36.Guess the Number](https://ghanendrabhardwaj19.github.io/number-nine/)💥[Source Code](https://github.com/GhanendraBhardwaj19/number-nine)
 
 
 
