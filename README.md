@@ -76,7 +76,7 @@
 
 🎯[36.Swiggy Clone](https://ghanendrabhardwaj19.github.io/My-Projects/swiggy_clone/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/swiggy_clone)
 
-🎯[37.Amazone Clone](https://ghanendrabhardwaj19.github.io/My-Projects/amazone_clone/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/amazone_clone)
+🎯[37.Amazone Clone](https://ghanendrabhardwaj19.github.io/My-Projects/amazon_clone/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/amazon_clone)
 
 
 
