@@ -74,7 +74,7 @@
 
 🎯[35.Guess the Number](https://ghanendrabhardwaj19.github.io/number-nine/)💥[Source Code](https://github.com/GhanendraBhardwaj19/number-nine)
 
-🎯[36.Swiggy Clone]((https://ghanendrabhardwaj19.github.io/My-Projects/randomcolor/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/swiggy-clone)
+🎯[36.Swiggy Clone](https://ghanendrabhardwaj19.github.io/My-Projects/randomcolor/index.html)💥[Source Code](https://github.com/GhanendraBhardwaj19/swiggy-clone)
 
 
 
