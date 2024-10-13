@@ -1,322 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
-    <title>Project 3</title>
-    <style>
-        *{
-           padding: 0;
-           margin: 0;
-           box-sizing: border-box;
-           /* overflow: hidden; */
-        }
-       img{
-        width: 200px;
-        height: 100px;
-       }
-       header{
-        height: 70px;
-        width: 100%;
-        background-color: white;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        position: sticky;
-        padding: 20px;
-        top: 0;
-        z-index: 5;
-        left: 0;
-       }
-       .nav_links li{
-        display: inline-block;
-        list-style: none;
-        /* margin: 10px; */
-        padding: 20px;
-        color: white;
-       }
-       .nav_links li a{
-        text-decoration: none;
-        font-size: 14px;
-        color: white;
-        /* color: white; */
-        font-family: 'Roboto Slab', serif;
-       }
-      .button button{
-        background-color: #ff7a57;
-        padding: 10px 16px;
-        font-size: 14px;
-        border-radius: 20px;
-        color: white;
-        font-weight: bold;
-        margin-right: 50px;
-        cursor: pointer;
-        border: none;
-       }
-       /* .content{
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/avtar.png" type="image/png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha384-ezFbFIE5nNq+0F6Cz5US3SM5R5n6f+E+kzX9dP6AHC5Nha5dFof5Y2/KoPhz5C5fF"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+   
+    <title>My Portfolio - Ghanendra Bhardwaj</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <h1 style="cursor: pointer;" ><a href="index.html">GB</a></h1>
+      <ul id="sidemenu">
+        <li><a  href="#header" class="nav-link active-link"onclick="active_ink()">HOME</a></li>
+        <li><a href="#about" class="nav-link" onclick="active_ink()">ABOUT</a></li>
+        <li><a href="#services" class="nav-link"onclick="active_ink()">SERVICES</a></li>
+        <li><a href="#projects" class="nav-link"onclick="active_ink()">PROJECTS</a></li>
+        <li><a href="#contact" class="nav-link"onclick="active_ink()">CONTACT</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+      <i class="fas fa-bars"onclick="showmenu()"></i>
+    </div>
+    <div id="header">
+      <div class="container flex flex-wrap overflow">
+        <div class="header-content">
+          <p>Web Developer</p>
+          <h1>Hi, I am <span>Ghanendra</span><br />Bhardwaj From India</h1>
+          <div class="buttons flex flex-wrap overflow">
+            <a type="button" href="assets/GhanendraResume.pdf" download class="btn btn-1">Download CV</a>
+            <a type="button" href="#contact" class="btn btn-2">Contact Me</a>
+          </div>
+        </div>
+        <div class="header-img">
+          <img src="./assets/avtar.png" alt="" />
+        </div>
+      </div>
+    </div>
 
-       } */
-       .about{
-        width: 100%;
-        min-height: 90vh;
-        color: aqua;
-        background-color: white;
-        display: flex;
-        justify-content:space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        /* position: relative; */
-       }
-       .img{
-        height: 80vh;
-        width: 30vw;
-       }
-       .about .content h2{
-        font-size: 25px;
-        color: #6c757d;
-        font-family: 'Oswald', sans-serif;
-        margin-bottom: 4px;
-       }
-       .about .content p{
-        font-size: 20px;
-        color: #6c757d;
-        font-family: 'Oswald', sans-serif;
-       }
-       .about .content h4{
-        font-size: 70px;
-        color: rgb(27, 26, 26);
-        font-family: 'Oswald', sans-serif;
-       }
-       .nav_links li a{
-        color: #80878d;;
-       }
-       .nav_links li a:hover{
-        color: #131313;
-       }
-       .hire{
-        background-color: #ff7a57;
-        padding: 14px 18px;
-        font-size: 14px;
-        border-radius: 20px;
-        color: white;
-        font-weight: bold;
-        margin-right: 50px;
-        cursor: pointer;
-        border: none;
-        margin-top: 40px;
+    <!-- *************** about me ***************** -->
+    <div id="about" class="padding-top pt">
+      <h1 class="main-heading">About Me</h1>
+      <div class="about-container box-shadow">
+        <div class="about-img">
+          <img src="./assets/ghanu.jpg" alt="" />
+        </div>
+        <div class="about-text">
+          <b>I am Ghanendra Bhardwaj and i'm a <span>Web Developer</span></b>
+          <p>
+            I’m Ghanendra Bhardwaj, a web developer from Aligarh, skilled in React.js, HTML, CSS, JavaScript,Tailwind CSS and MERN. I specialize in creating responsive, user-friendly web applications with a focus on clean design and functionality. Continuously learning and adapting to the latest web development trends, I aim to deliver high-quality digital experiences. Check out my portfolio to see my work, and feel free to connect with me for any collaboration or project inquiries.
+          </p>
+          <div class="icons">
+            <a href="https://youtube.com/@ghanendrabhardwaj"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/ghanendra-bhardwaj-413b2a24b/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://youtube.com/@ghanendrabhardwaj"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://youtube.com/@ghanendrabhardwaj"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- **************  services section **************** -->
 
-       }
-       .ddcv{
-        background-color: #252525;
-        padding: 14px 18px;
-        font-size: 14px;
-        border-radius: 20px;
-        color: white;
-        font-weight: bold;
-        margin-right: 50px;
-        cursor: pointer;
-        border: none;
-        margin-top: 40px;
-        translate: -30px;
-       }
-       .hire:hover{
-        background-color: #fd5b32;
-       }
-       .ddcv:hover{
-        background-color: #070707;
-       }
-       .button button:hover{
-        background-color: #fa6c48;
-       }
-       .fa-brands{
-        padding: 10px;
-        font-size: 18px;
-        background-color: transparent;
-        border: 2px solid #fa6c48;
-        border-radius: 50%;
-        margin-top: 20px;
-        margin-left: 10px;
-        color: #fa6c48;
-        transition: all 0.5s ease-out;
-        cursor: pointer;
-       }
-       .fa-brands:hover{
-        color: white;
-        background-color: #fa6c48;
-        color: rgb(252, 251, 251);
-        /* width: 1px; */
-       }
-
-       .intro{
-        width: 100%;
-        height: 90%;
-        /* display: flex; */
-        /* justify-content: space-between;
-        align-items: flex-start; */
-        margin: 20px;
-        /* border: 1px solid green; */
-        padding: 100px;
-        /* flex-wrap: wrap; */
-        /* padding: 80px; */
-        /* background-color: #ff7a57; */
-        
-       }
-       .avatar{
-        height: 200px;
-        width: 200px;
-       }
-       .images{
-        /* border: 2px solid black; */
-        /* padding: 40px; */
-        margin-left: 40px;
-        margin-top: 80px;
-        display: inline-block;
-        float: left;
-    
-
-
-       }
-       .introduction{
-        width: 700px;
-        height: 400px;
-        /* border: 2px solid black; */
-        margin-right: 40px;
-        margin-left: 40px;
-        margin-top: 80px;
-        /* display: flex; */
-        /* float: left; */
-        float: left;
-        /* flex-direction: column; */
-       }
-       .introduction h3{
-        font-size: 30px;
-        margin-bottom: 10px;
-        margin-left: 10px;
-       }
-       .introduction h4{
-        margin: 10px;
-       }
-       .introduction p{
-        margin: 10px;
-        font-size: 18px;
-       }
-       .introduction .dd{
-        background-color: #fa6c48;
-        height: 46px;
-        width: 144px;
-        /* padding: 16px 20px; */
-        font-size: 14px;
-        border-radius: 20px;
-        color: white;
-        font-weight: bold;
-        /* margin-right: 50px; */
-        cursor: pointer;
-        border: none;
-        margin-top: 20px;
-        margin-left: 4px;
-        /* translate:10px; */
-       }
-       .info{
-        height: 100px;
-        width: 50%;
-        background-color:white;
-        translate: 50% -50px ;
-        border-radius: 50px;
-        box-shadow: 0px 0px 10px 2px rgb(242, 240, 240);
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 10px;
-       }
-       .first,.second,.third{
-        align-self: center;
-        text-align: center;
-        justify-content: center;
-       }
-       .vl {
-        border-left: 1px solid rgb(53, 53, 53);
-        height: 50px;
-         }
-         .me{
-            width: 100%;
-            height: 400px;
-            background-color: #fa6c48;
-         }
+    <div id="services" class="padding-top pt">
+      <h1 class="main-heading">My Services</h1>
+      <div class="services-container flex">
+        <div class="my-services box-shadow">
+          <!-- <i class="fa-brands fa-react"></i> -->
+           <img src="assets/react.svg" alt="">
+          <b>React Development</b>
+          <p>
+            Creating dynamic and interactive web applications with the power of React.js.
+          </p>
+          <i class="fa-solid fa-arrow-right arrow"></i>
+        </div>
        
-
-    </style>
-</head>
-<body>
-    <header>
-        <img src="../img/orangelogo.png" class="logo" alt="logo">
-        <nav>
-         <ul class="nav_links">
-             <li><a href="#home" style="color: #ff7a57;">Home</a></li>
-             <li><a href="#about">About</a></li>
-             <li><a href="#service">Service</a></li>
-             <li><a href="#live">Portfolio</a></li>
-             <li><a href="#live">Testmonial</a></li>
-             <li><a href="#live">Blog</a></li>
-             <li><a href="#live">Contact</a></li>
-         </ul>
-        </nav>
-        <a href="#button" class="button" ><button>Components</button></a>
-     </header>
-     <div class="about">
-        <div class="content">
-        <h2>hello, I'm</h2>
-        <h4>G Bhardwaj</h4>
-        <p>UI/UX Designer</p>
-        <button class="hire">HIRE ME</button>
-        <button class="ddcv">DOWNLOAD CV</button><br>
-        <i class="fa-brands fa-facebook" style="margin-left: 0px;"></i>
-        <i class="fa-brands fa-google-plus"></i>
-        <i class="fa-brands fa-pinterest"></i>
-        <i class="fa-brands fa-twitter"></i>
+        <div class="my-services box-shadow">
+          <!-- <i class="fa-brands fa-js"></i> -->
+           <img src="assets/jss.svg" alt="">
+          <b>JavaScript Development</b>
+          <p>
+            Crafting custom, feature-rich web solutions through JavaScript expertise.
+          </p>
+          <i class="fa-solid fa-arrow-right arrow"></i>
         </div>
-        <div class="image">
-            <img class="img" src="../img/man.png" alt="">
+        <div class="my-services box-shadow">
+          <!-- <i class="fa-brands fa-js"></i> -->
+           <img style="margin:8px 0;" src="assets/tailwind-css.svg" alt="">
+          <b>Tailwind CSS Development</b>
+          <p>
+            Building responsive and attractive websites using Tailwind CSS's easy-to-use utility classes.
+          </p>
+          <i class="fa-solid fa-arrow-right arrow"></i>
         </div>
-     </div>
-     <hr>
-     <div class="info">
-
-        <div class="first">
-            <h2>124</h2>
-            <p>Happy Clients</p>
-        </div>
-        <div class="vl"></div>
-        <div class="second">
-            <h2>427</h2>
-            <p>Project Completed</p>
-        </div>
-        <div class="vl"></div>
-        <div class="third">
-            <h2>789</h2>
-            <p>Award Won</p>
-        </div>
-    </div>
-     <div class="intro">
-        
-        <div class="images">
-            <img src="../img/avatar.jpg" class="avatar" alt="">
-        </div>
-        <div class="introduction">
-        
-            <h3>James Smith</h3>
-            <h4>UI/UX Designer</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, pariatur, aperiam aut autem voluptas odit. Odio ducimus delectus totam sed aliquam sequi praesentium mollitia, illum repudiandae quidem quod, magni magnam.</p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, eius, nam. Quo praesentium qui temporibus voluptatum, facilis aliquid eligendi fugiat beatae neque inventore non. Laborum repellendus consequatur ullam voluptatum asperiores.
-            </p>
-            <button class="dd">DOWNLOAD CV</button><br>
-        </div>
-    </div>
       
- 
-</body>
+      </div>
+    </div>
+    <!-- ************porjects************* -->
+
+    <div id="projects" class="padding-top pt">
+      <h1 class="main-heading">Latest Projects</h1>
+      <div class="projects-container flex">
+        <div class="my-projects project-1 box-shadow">
+          <img src="./assets/img-1.jpg" alt="" />
+          <div class="layer">
+            <h2>Weather App</h2>
+            <p>
+              A weather application that provides real-time weather updates and forecasts for any location.
+            </p>
+            <a href="https://ghanendrabhardwaj19.github.io/weather-app-react/"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="my-projects project-2 box-shadow">
+          <img src="./assets/img-2.jpg" alt="" />
+          <div class="layer">
+            <h2>CryptoWeb</h2>
+            <p>
+              Cryptoweb is a React app that displays real-time cryptocurrency data using APIs, offering current prices and market insights.
+            </p>
+            <a href="https://ghanendrabhardwaj19.github.io/My-Projects/LinkedInClone/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="my-projects project-3 box-shadow">
+          <img src="./assets/img-4.jpg" alt="" />
+          <div class="layer">
+            <h2>Rock,Paper & Scissors</h2>
+            <p>
+              A classic game brought to life in the digital realm, where users can test their luck against the computer.
+            </p>
+            <a href="https://ghanendrabhardwaj19.github.io/My-Projects/RockPaperScissors/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="my-projects project-4 box-shadow">
+          <img src="./assets/img-3.jpg" alt="" />
+          <div class="layer">
+            <h2>Code Editor</h2>
+            <p>
+              A simple code editor providing a basic coding environment for writing and testing code snippets.
+            </p>
+            <a href="https://ghanendrabhardwaj19.github.io/My-Projects/CodeEditor/CodeEditor/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="my-projects project-5 box-shadow">
+          <img src="./assets/img-5.jpg" alt="" />
+          <div class="layer">
+            <h2>My Portfolio</h2>
+            <p>
+              A personal portfolio website designed to showcase my skills, creativity, and a selection of projects in web development and design.
+            </p>
+            <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="my-projects project-6 box-shadow">
+          <img src="./assets/img-6.jpg" alt="" />
+          <div class="layer">
+            <h2>Tic Tac Toe</h2>
+            <p>
+              Tic Tac Toe is a React-based computer game where players compete against the computer to align three marks in a row.
+            </p>
+            <a href="https://ghanendrabhardwaj19.github.io/react-js-projects/"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <a href="https://github.com/GhanendraBhardwaj19/My-Projects/blob/main/README.md" class="btn btn-1">See More</a>
+      </div>
+    </div>
+
+    <!-- *********skills************* -->
+
+    <div id="skills" class="padding-top pt">
+      <h1 class="main-heading">My Skills</h1>
+      <div class="skills-container box-shadow">
+        <div class="skils-left">
+          <b>My creative skill & experiences.</b>
+          <p>
+            As a recent graduate with a B.Tech in Computer Science, I possess a
+            strong foundation in MERN Stack development, proficient in Java,
+            HTML, CSS, JavaScript, MongoDB, Express JS, React JS, Node JS, Git,
+            and GitHub. While I am a fresher in terms of professional
+            experience, my passion, dedication, and comprehensive skill set make
+            me a promising candidate for software development roles.
+          </p>
+          <a href="https://github.com/GhanendraBhardwaj19" class="btn btn-1">Read More</a>
+        </div>
+        <div class="skils-right">
+          <div class="percentage">
+            <p>HTML & CSS</p>
+            <b>80%</b>
+          </div>
+          <div class="div">
+            <div class="inner-div inner-div-1"></div>
+          </div>
+         
+          
+         
+          <div class="percentage">
+            <p>JavaScript</p>
+            <b>75%</b>
+          </div>
+          <div class="div">
+            <div class="inner-div inner-div-3"></div>
+          </div>
+          
+          <div class="percentage">
+            <p>React JS</p>
+            <b>70%</b>
+          </div>
+          <div class="div">
+            <div class="inner-div inner-div-5"></div>
+          </div>
+          <div class="percentage">
+            <p>Node.js & Express.js</p>
+            <b>70%</b>
+          </div>
+          <div class="div">
+            <div class="inner-div inner-div-5"></div>
+          </div>
+          <div class="percentage">
+            <p>Tailwind CSS</p>
+            <b>80%</b>
+          </div>
+          <div class="div">
+            <div class="inner-div inner-div-6"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ****************contact****************** -->
+
+    <div id="contact" class="padding-top pt overflow">
+      <h1 class="main-heading">Contact ME</h1>
+      <div class="contact-section flex">
+        <div class="contact-left box-shadow">
+          <b class="bold-text">Get in Touch</b>
+          <p class="para">
+            Got a project in mind or just want to chat? Reach out via email or connect on social media. I'm here to brainstorm, collaborate, and create something amazing together. Can't wait to hear from you!
+          </p>
+          <div class="name-box box">
+            <i class="fa-solid fa-user"></i>
+            <div>
+              <b>name</b>
+              <p>Ghanendra Bhardwaj</p>
+            </div>
+          </div>
+          <div class="address-box box">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <b>Address</b>
+              <p>Bhojpur Baharpur Aligarh</p>
+            </div>
+          </div>
+          <div class="email-box box">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <b>Email</b>
+              <p>ghanendrasharma8@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right box-shadow">
+          <b class="bold-text">Message Me</b>
+          <form name="submit-to-google-sheet">
+            <div class="div">
+              <input autocomplete="off" type="text" name="Name" placeholder="Name" class="name-input" required />
+              <input autocomplete="off" type="email" name="Email" placeholder="Email" class="email-input" required />
+            </div>
+            <input autocomplete="off" type="text" name="Subject" placeholder="Subject" class="subject-input" />
+            <textarea class="message-input" name="Message" placeholder="Message"></textarea>
+            <button type="submit" class="btn btn-1">Message Me</button>
+            <p id="msg"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        Copyright &copy; Ghanendra , Made with
+        <i class="fa-solid fa-heart"></i> by Ghanendra Bhardwaj !</p>
+      </p>
+    </div>
+
+    <script src="index.js"></script>
+    <script>
+      const scriptUrl = "";
+      const forms = document.forms['formName'];
+      forms.
+
+
+    </script>
+    <script
+      src="https://kit.fontawesome.com/f7c5396a66.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 1500,
+      });
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwQKu2f0t8cn1N7Hzcj5rnqnEznNE1J0W-Ofnq0zWmMxnkgN0otDInfExKRBCKeuNY/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg =document.getElementById("msg");
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+          msg.innerHTML = "message sent successfully !";
+          setTimeout(function(){
+            msg.innerHTML = "";
+          },5000);
+          form.reset();
+        })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+    
+  </body>
+</html>
 </html>
